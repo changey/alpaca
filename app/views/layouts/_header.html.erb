@@ -1,0 +1,77 @@
+<header class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+
+			<% if I18n.locale==:en %>
+			<%= link_to t("Alpaca"), root_path, id: "logo"%>
+			<% elsif I18n.locale==:th %>
+			<%= link_to t("Alpaca"), root_path(locale: :th), id: "logo"%>
+			<% elsif I18n.locale==:zh_tw %>
+			<%= link_to t("Alpaca"), root_path(locale: :zh_tw), id: "logo"%>
+			<% elsif I18n.locale==:zh_cn %>
+			<%= link_to t("Alpaca"), root_path(locale: :zh_cn), id: "logo"%>
+			<% else %>
+			<%= link_to t("Alpaca"), root_path, id: "logo"%>
+			<% end %>
+
+			<nav>
+				<ul class="nav pull-right">
+					<li>
+						<% if I18n.locale==:en %>
+						<%= link_to t("Home"), root_path %>
+						<% elsif I18n.locale==:th %>
+						<%= link_to t("Home"), root_path(locale: :th)%>
+						<% elsif I18n.locale==:zh_tw %>
+						<%= link_to t("Home"), root_path(locale: :zh_tw) %>
+						<% elsif I18n.locale==:zh_cn %>
+						<%= link_to t("Home"), root_path(locale: :zh_cn) %>
+						<% else %>
+						<%= link_to t("Home"), root_path %>
+						<% end %>
+					</li>
+					
+
+					<% if signed_in? %>
+					<li class="dropdown" id="accountmenu">
+
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t("Languages")%><b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<%= link_to locale: :en do %>
+								<%= x_image_tag('/images/us_flag.jpeg', :width => '21') %> English
+								<% end %>
+							</li>
+							<li>
+								<%= link_to locale: :th do %>
+								<%= x_image_tag('/images/thai_flag.jpeg', :width => '21') %> ภาษาไทย
+								<% end %>
+							</li>
+							<li>
+								<%= link_to locale: :zh_tw do %>
+								<%= x_image_tag('/images/taiwan_flag.jpeg', :width => '21') %> 正體中文
+								<% end %>
+							</li>
+							<li>
+								<%= link_to locale: :zh_cn do %>
+								<%= x_image_tag('/images/china_flag.jpeg', :width => '21') %> 简体中文
+								<% end %>
+							</li>
+						</ul>
+
+					</li>
+					<li>
+						<%= link_to t('Account Setting'), account_path(locale: I18n.locale) %>
+
+					</li>
+					<li>
+						<%= link_to t("Sign out"), signout_path%>
+					</li>
+					<% else %>
+					</li>
+					<% end %>
+
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>

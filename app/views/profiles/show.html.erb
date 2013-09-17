@@ -1,0 +1,157 @@
+<div class="row" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+	<aside class="span3">
+		<p id="notice">
+			<%= notice %>
+		</p>
+
+		<h3><%= @fb_object['name'] %></h3>
+      <p id="fav"><% if Favorite.where({:user_id => session[:user_id], :profile_id=>@profile.id}).empty? %>
+            <input type="button" value="Add to My Favorites!" id="favButton" onclick="clickFav();"></input>
+      <% else %>
+            <input type="button" value="Remove from My Favorites" id="favButton" onclick="clickFav();"></input>
+      <% end %>
+        </p>
+      <img src="http://graph.facebook.com/<%= @profile.fbid%>/picture?width=400" alt="Smiley face">
+
+		<br>
+		<br>
+		
+		<p >
+			<input type="text" name="body">
+			
+			<button id="comment" class="btn btn-primary">
+				<%= t 'New Comment'%>
+			</button>
+		</p>
+
+		
+	</aside>
+	<div class="span7">
+        <h3><%= t 'Ratings'%></h3>
+		<table id="ratings">
+			<tr>
+				<td></td>
+				<td></td>
+				<td><%= t 'your rating'%></td>
+				<td><%= t 'average rating'%></td>
+			</tr>
+		</table>
+		<br>
+	</div>
+
+	<div class="span8">
+        <h3><%= t 'Comments'%></h3>
+		<table id="comments">
+			<% @comments.each do |comment| %>
+			<tr>
+				<td >
+                  <%= t('User '+ comment.anonymous_id)+': '+sanitize(comment.body) %>
+                  <div class="vote">
+                    <td>
+                    <img class="up" src="/assets/thumbsup.png" width="30" height="30"
+                             onmouseover="this.src='/assets/thumbsup_on.png'"
+                             onmouseout="this.src='/assets/thumbsup.png'"
+                             onclick="voteUp('<%= @profile.id %>','<%= comment.id %>', this.nextElementSibling)">
+                      <p><%= comment.votes.where(:up=>'true').size %></p>
+                    </td>
+
+                    <td>
+                    <img class="down"  src="/assets/thumbsdown.png" width="30" height="30"
+                         onmouseover="this.src='/assets/thumbsdown_on.png'"
+                         onmouseout="this.src='/assets/thumbsdown.png'"
+                        onclick="voteDown('<%= @profile.id %>','<%= comment.id %>', this.nextElementSibling)">
+                      <p><%= comment.votes.where(:up=>'false').size %></p>
+                    </td>
+                  </div>
+
+                </td>
+			</tr>
+
+			<% end %>
+		</table>
+
+		<br>
+      <%= render :partial => 'comments.js' %>
+	</div>
+</div>
+
+<%= render :partial => 'rating.js' %>
+
+<script >
+    function clickFav(){
+        var url = "../"+ <%= @profile.id %> + "/fav"
+        $.post(url,
+                {profile_id:<%= @profile.id %>},
+                function(r){
+                    document.getElementById("favButton").setAttribute("value",r)
+                }
+        )
+    }
+
+  function voteUp(pid, cid, c){
+      var url = "../"+pid + "/vote.json"
+      $.post(
+              url,
+              {comment_id:cid, up:true},
+              function(r){
+                  c.innerHTML= r.toString();
+              }
+      )
+  }
+  function voteDown(pid, cid, c){
+      var url ="../"+ pid + "/vote.json"
+      $.post(
+              url,
+              {comment_id:cid, up:false},
+              function(r){
+                  c.innerHTML= r.toString();
+              }
+      )
+  }
+
+    function newComment(r){
+        var user = r.uid
+        var comment = r.comment
+        var header = 'User '+ user + ': '
+
+
+
+        //todo: comment dom construction
+        var trEl = document.createElement("tr")
+        var tdEl = document.createElement("td")
+        tdEl.textContent= header+ comment.body
+        var tdEl1 = document.createElement("td")
+        var tdEl2 = document.createElement("td")
+
+        var imgEl1 = document.createElement("img")
+        imgEl1.setAttribute("src","/assets/thumbsup.png")
+        imgEl1.setAttribute('width','30')
+        imgEl1.setAttribute('height','30')
+        imgEl1.setAttribute('onmouseover',"this.src='/assets/thumbsup_on.png'")
+        imgEl1.setAttribute('onmouseout',"this.src='/assets/thumbsup.png'")
+        imgEl1.setAttribute('onclick',"voteUp('<%= @profile.id %>','"+comment.id +"', this.nextElementSibling)")
+        var imgEl2 = document.createElement("img")
+        imgEl2.setAttribute("src","/assets/thumbsdown.png")
+        imgEl2.setAttribute('width','30')
+        imgEl2.setAttribute('height','30')
+        imgEl2.setAttribute('onmouseover',"this.src='/assets/thumbsdown_on.png'")
+        imgEl2.setAttribute('onmouseout',"this.src='/assets/thumbsdown.png'")
+        imgEl2.setAttribute('onclick',"voteDown('<%= @profile.id %>','"+comment.id +"', this.nextElementSibling)")
+
+
+        var n1 = document.createElement("p");
+        n1.textContent= 0
+        var n2 = document.createElement("p");
+        n2.textContent= 0
+        tdEl1.appendChild(imgEl1)
+        tdEl1.appendChild(n1)
+        tdEl2.appendChild(imgEl2)
+        tdEl2.appendChild(n2)
+        trEl.appendChild(tdEl)
+        trEl.appendChild(tdEl1)
+        trEl.appendChild(tdEl2)
+
+        document.getElementById("comments").appendChild(trEl)
+    }
+
+</script>

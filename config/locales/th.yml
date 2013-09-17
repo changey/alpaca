@@ -1,0 +1,48 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+th:
+  hello: "สวัสดีชาวโลก"
+  Name: "ชื่อ"
+  search:
+    detail: "ค้นหา:"
+  Comments: "ความคิดเห็น"
+  Languages: "เลือกภาษา"
+  Home: "หน้าแรก"
+  Sign out: "ออกจากระบบ"
+  Alpaca: "Alpaca"
+  Ratings: "คะแนน"
+  your rating: "คะแนนของคุณ"
+  average rating: "คะแนนเฉลี่ย"
+  anonymous: "ผู้ใช้"
+  Appearances: "รูปร่าง หน้าตา"
+  Account Setting: "ตั้งค่าผู้ใช้"
+  Male: "ชาย"
+  Female: "หญิง"
+  selectgender:
+    detail: "กรุณาเลือกเพศที่ต้องการ (คุณสามารถเลือกได้ครั้งเดียวเท่านั้น)"
+  new:
+    submit: "ตั้งค่า"
+  Appearances: "รูปลักษณ์ภายนอก"
+  IQ: "สติปัญญา"
+  EQ: "ปฏิสัมพันธ์"
+  Bangability: "ลีลาท่าทาง"
+  New Comment: "แสดงความเห็น"
+  Sort by: "จัดลำดับโดย"
+  Filter: "กรองเพื่อน"
+  Category: "เกณฑ์"
+  at least: "อย่างน้อย"
+  at most: "อย่างมาก"
+  stars: "ดาว"
+  Search: "แสดงผล"
+  User: "ผู้ใช้"
+  Update User: "ตั้งค่า"
+  index:
+    first: "A Romantic Partner Review System"
+    second: "We'll never post anything on your Facebook!"
+    third: "Completely Anonymous!"
+  privacy:
+    first: "by signing in you agree to our"
+    second: "terms of use"
+    third: "and"
+    fourth: "privacy policy"

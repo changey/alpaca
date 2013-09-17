@@ -1,0 +1,24 @@
+//the css to control the masonry display of the user page
+#masonry-container {
+  background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+#container {
+    width:      960px; // width of the entire container for the wall
+}
+ 
+.box {
+    width:      180px; // width of each brick less the padding inbetween
+    padding:    0px 10px 15px 10px;
+}

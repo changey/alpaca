@@ -1,0 +1,42 @@
+[Agenda]
+1. Finalize the initial system design
+2. Identification of minimum viable product
+3. Teamwork plan for the coming week
+
+[Notes]
+Design
+[Goal]
+- MIT only or general? general
+- Identify the risk of privacy concerns --> disclaimer!
+[Context]
+- “central server” --> “Alpaca”
+- “database” --> “back end”/remove
+- “User” fine (but distinguish different users)
+[Features]
+- privacy concerns (more brainstorming?) 
+[Security]
+- physically left computer with fb on... password
+- search “security fb api” 
+* Check with Jackson about offensiveness? How to deal with? 
+
+
+4-member project expectation
+- Good UI
+- Correct object model
+- more security
+- Broad functionalities
+
+MVP
+- specific, REALISTIC (comment only)
+
+Extension
+- friend searching is challenging
+
+Task Division
+- 2 subgroups for account, fb connection, comment?
+- MVP work plan: tasks, person, deadline
+
+
+
+
+

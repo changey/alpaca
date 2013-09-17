@@ -1,0 +1,59 @@
+[Agenda]
+
+0. Get feedback from the TAs
+- Bigger after extension (4~5 major additional features)
+
+
+1. Walk through MVP implementation details
+	a. Facebook login
+	b. profile creation
+	c. comment display
+	d. visual improvement (CSS)
+	e. security?
+
+MVP issues:
+- facebook login confusion: use our own computers for next demo
+- loading image is slow (esp in firefox?)
+- CSS
+- add user-comment association
+- change background to alpaca kissing pic?
+- login page aesthetics
+- [Minshu] anonymity id : using hash value with 2 last digits displayed as ‘xx’
+- check session when loading page containing user-specific information
+- gender filtering code moves to model
+- “create profile” → “be the first to comment”
+
+
+  
+2. Discuss project extension
+2nd-round brainstorming on possible extensions: 
+
+            [Eric] internationalization(semi done, puzzling about redirection)
+            [Eric] more css
+[Minshu] vote up/down 
+[Wei] lazy loading 
+[Wei] gender preference       [
+            [Minshu] “favorites”
+            [Pasin] categorized rating of profiles. sorting / filtering/search 
+[rating criteria: appearances, EQ, IQ, bangability ]
+	[Wei] admin?
+            
+
+
+	Recommend friends 
+	edittable comment? 
+chart 
+
+
+	
+
+Finalize Extensions Design (Push to later)
+
+Discuss Challenges and Risks (Push to later)
+
+more rigorous fake account check (if a user is changing gender or having too little number of friends, the user need to contact us for verification for potential fake id)
+
+3. Teamwork plan for the coming week
+Individual outside commitment
+
+

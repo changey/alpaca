@@ -1,0 +1,43 @@
+[Agenda]
+
+1). Team contract https://docs.google.com/document/d/1Ix4Iw96q_L9soZur_hYdHJNK7bHPyGXNiuuHY4-1Wxs/edit
+
+2) Project Ideas:
+- Find specific part of youtube ideas (concept: youtube selecting tool, community tagging) 
+- Database manipulation interface for non-techie users
+- bf/gf review 
+
+
+3) Project 
+Similar websites: Bangwithfriends, Glass Door, okcupid
+
+Goal: boyfriend/girlfriend review, get to know your friends efficiently
+
+Core features: profile (from fb) ; upvote/downvote; weighting by relationship (friends?); who can review whom (< friends)
+Add-on features:  ( reviewee can request removal?)(customized scoring);(glass door) must post first before review
+
+Issues:
+- fake review? "get into the same boat" must post first
+
+"The Story": OMG SO MANY GUYS/GIRLS AROUND ME BUT THEY ARE ALL NERDS AND THERE ARE NO WAYS TO GET TO KNOW WHAT KIND OF PERSONS REALLY ARE
+
+4) Pitch
+Joke on Jackson’s pitch
+
+- talk in British accent
+- time allocation pie chart: “waiting for food” --> “waiting for bf/gf”
+- receipt --> British english
+- act out the story!
+- concept:
+- object diagram: see photo
+- features: 
+- risks: 
+	* spam reviews -> limit to certain number
+	design: fake reviews -> build credential? 
+	implementation: facebook API tech-issues (third-party...)
+- security: not really?
+
+
+Agenda for next meeting:
+- Timeline (referring to guideline)
+- pitch slides & practice

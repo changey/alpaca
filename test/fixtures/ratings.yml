@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  category: MyString
+  rate: 1
+  user_id: MyString
+  profile_id: MyString
+
+two:
+  category: MyString
+  rate: 1
+  user_id: MyString
+  profile_id: MyString

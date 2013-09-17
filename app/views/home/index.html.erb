@@ -1,0 +1,36 @@
+<body class="homepage">
+
+	<ul>
+		<% flash.each do |key, msg| %>
+		<%= content_tag :li, msg, id: key %>
+		<% end %>
+	</ul>
+
+	<div class="center hero-unit" >
+		<div id="child">
+			<div id='hero' style='position:relative;'>
+				<h2><%= t 'index.first'%></h2>
+				<p>
+					<%= t 'index.second'%>
+				</p>
+				<h4><%= t 'index.third'%></h4>
+				<a href='/signin'> <img alt="Connect-with-facebook" src="/images/connect-with-facebook.png" /> </a>
+				
+				<br></br>
+				<p class='terms'>
+					<%= t 'privacy.first' %>
+					<a href="terms"><%= t 'privacy.second'%></a>
+					<br />
+					<%= t 'privacy.third' %>
+					<a href="/privacy"><%= t 'privacy.fourth' %></a>
+				</p>
+				<p class='contact'>
+					<div class="social_butts social_fb">
+						<div class="fb-like" data-href="http://bangwithfriends.com" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="tahoma"></div>
+					</div>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>

@@ -1,0 +1,41 @@
+[Agenda]
+
+0. Get feedback from the TAs
+- MENTION HEROKU SERVER CONSTRAINT
+
+1. Walk through the current extension implementation details
+	a. Internationalization
+	b. Rating
+	c. comment display
+	d. visual improvement (CSS) - generally good
+
+2. Extension issues:
+- Lazy loading (people has more than one thousand friends
+- Internationalization collapses when the facebook calls back
+- anonymization 
+
+3. Discuss more on the project extension
+2nd-round brainstorming on possible extensions:
+
+           [Eric] internationalization(semi done, puzzling about redirection)
+           [Eric] more css
+[Minshu] vote up/down
+[Wei] lazy loading: for demo, limiting # profiles is fine;
+[Wei] gender preference: not that necessary       
+           [Minshu] “favorites”
+           [Pasin] categorized rating of profiles. sorting / filtering/search
+(rating criteria: appearances, EQ, IQ, bangability)
+	
+[Wei] admin? AFTER OTHER FEATURES ARE DONE
+           
+
+
+      b. 	Finalize Extensions Design (Push to later)
+	context, OM, challenges, new features, GUI, 
+      c. Discuss Challenges and Risks (Push to later)
+
+      d. more rigorous fake account check (if a user is changing gender or having too little number of friends, the user need to contact us for verification for potential fake id)
+
+3. Teamwork plan for the coming week
+Individual outside commitment
+

@@ -1,0 +1,44 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+zh_cn:
+  hello: "爱八卦"
+  Name: "姓名"
+  search:
+    detail: "搜索想点评的朋友:"
+  Comments: "对他/她有什么想说的"
+  Languages: "语言"
+  Home: "首页"
+  Sign out: "注销"
+  Alpaca: "爱八卦"
+  Male: "葛格(男)"
+  Female: "美眉"
+  selectgender:
+    detail: "请选择您的性向(注意, 是您感兴趣的性别, 选择后无法更改)"
+  Ratings: "评价"
+  your rating: "你的评价"
+  average rating: "平均评价"
+  anonymous: "匿名"
+  Appearances: "帅气/正妹度"
+  IQ: "聪明度"
+  EQ: "情商"
+  Bangability: "床上功夫"
+  New Comment: "新的点评"
+  Account Setting: "性向设定"
+  stars: "星"
+  Category: "类别"
+  at least: "至少"
+  at most: "至多"
+  stars: "星"
+  Filter: "筛选"
+  Sort by: "排序"
+  Search: "搜索"
+  index:
+    first: "最坦诚的浪漫约会对象评鉴"
+    second: "我们永远不会在你的脸书墙上po任何东西!"
+    third: "完全是匿名的!"
+  privacy:
+    first: "点击「注册」的同时，表示你同意了我们的"
+    second: "使用条款"
+    third: "并且你也详读和完全了解我们的"
+    fourth: "资料使用政策"

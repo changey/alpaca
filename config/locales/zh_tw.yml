@@ -1,0 +1,49 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+zh_tw:
+  hello: "愛八卦"
+  Name: "姓名"
+  search:
+    detail: "搜尋想評論的朋友:"
+  Comments: "對他/她有什麼想說的"
+  Languages: "語言"
+  Home: "首頁"
+  Sign out: "登出"
+  Alpaca: "愛八卦"
+  Ratings: "評價"
+  your rating: "您的評價"
+  average rating: "平均評價"
+  anonymous: "匿名"
+  Appearances: "帥氣度"
+  Account Setting: "性向設定"
+  Male: "葛格(男)"
+  Female: "美眉(女)"
+  selectgender:
+    detail: "請選擇您的性向 (注意, 是您感興趣的性別, 選擇後無法更改)"
+  new:
+    submit: "%{namespace} anlegen"
+  Appearances: "帥氣/正妹度"
+  IQ: "聰明度"
+  EQ: "好人度(EQ)"
+  Bangability: "床上功夫"
+  New Comment: "新的評論"
+  Sort by: "排序"
+  Filter: "篩選"
+  Category: "類別"
+  at least: "至少"
+  at most: "至多"
+  stars: "星"
+  Search: "搜尋"
+  index:
+    first: "最坦誠的浪漫約會對象評鑑"
+    second: "我們永遠不會在你的臉書牆上po任何東西!"
+    third: "完全是匿名的!"
+  privacy:
+    first: "點擊「註冊」的同時，表示你同意了我們的"
+    second: "使用條款"
+    third: "並且你也詳讀和完全暸解我們的"
+    fourth: "資料使用政策"
+  View My Favorites: "我的最愛"
+    
+    

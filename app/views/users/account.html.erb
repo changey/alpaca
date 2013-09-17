@@ -1,0 +1,22 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <p><%= t('selectgender.detail')%></p>
+    <%= f.radio_button :gender_pref, 'male' %><b><%= ' '+t('Male') %></b>
+    <%= f.radio_button :gender_pref, 'female' %><b><%= ' '+t('Female') %></b>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

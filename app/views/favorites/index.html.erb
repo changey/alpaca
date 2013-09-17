@@ -1,0 +1,19 @@
+<h1>Listing favorites</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @favorites.each do |favorite| %>
+  <tr>
+    <% @profile = Profile.find(favorite.profile_id) %>
+    <% @fboj = @profile.get_fbobject(session) %>
+    <td> <%=  link_to @fboj['name'],  "/profiles/show_profile/" +@fboj['id'] %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
