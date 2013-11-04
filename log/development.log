@@ -9153,3 +9153,1489 @@ Served asset /application.css - 304 Not Modified (2ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2013-05-15 16:44:55 -0400
 Served asset /application.js - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-09-30 23:21:53 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.4ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.4ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.5ms)
+  Rendered users/show.html.erb within layouts/application (1754.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 1778ms (Views: 1766.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:21:55 -0400
+Compiled i18n/translations.js  (1227ms)  (pid 4030)
+Compiled application.js  (22ms)  (pid 4030)
+Served asset /application.js - 200 OK (1529ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-09-30 23:21:57 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/users_controller.rb:56:in `showFriendsList'
+
+
+  Rendered /Users/changey/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/changey/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/changey/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-09-30 23:21:57 -0400
+Served asset /glyphicons-halflings.png - 200 OK (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-30 23:21:59 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:21:59 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-30 23:22:16 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:22:16 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2013-09-30 23:22:17 -0400
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/facebook
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-09-30 23:22:17 -0400
+
+
+Started GET "/auth/facebook/callback?code=AQASVYnBFNvD0ozeAGIGsKkJTClI6F78MWKJKY2lCdLl61IMXB-SfPetnIVtYRrRdXrl3Cm_T7YnqFKPidVCwwqVkC-vNhuzaguS6BIIatXBzMpnulN9qnF4ofo95QFUZruRSEqYlsXnrbokYiZh4dqgVsi8C07q54GI2tDRtfcN_qxyVGo7YyX5AOYEmRCZT8qwKneXSnD2KMXLiPqYsazi75Gc_bhi5gBMgEu_nFvh41bQhPpsOg1yzQ1mK_eWxUwDXvuMIdF26yqEMbfMAHBRRlWaI25NP4JtbHt1k4lPMsj6LVdE3XXKqSNabe5bGSo" for 127.0.0.1 at 2013-09-30 23:22:18 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQASVYnBFNvD0ozeAGIGsKkJTClI6F78MWKJKY2lCdLl61IMXB-SfPetnIVtYRrRdXrl3Cm_T7YnqFKPidVCwwqVkC-vNhuzaguS6BIIatXBzMpnulN9qnF4ofo95QFUZruRSEqYlsXnrbokYiZh4dqgVsi8C07q54GI2tDRtfcN_qxyVGo7YyX5AOYEmRCZT8qwKneXSnD2KMXLiPqYsazi75Gc_bhi5gBMgEu_nFvh41bQhPpsOg1yzQ1mK_eWxUwDXvuMIdF26yqEMbfMAHBRRlWaI25NP4JtbHt1k4lPMsj6LVdE3XXKqSNabe5bGSo", "provider"=>"facebook"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."fbid" = '1605016083' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."fbid" = '1605016083' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "friend_list" = NULL, "updated_at" = '2013-10-01 03:22:19.033515' WHERE "users"."id" = 1[0m
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 272ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-09-30 23:22:19 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.0ms)
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:22:19 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-09-30 23:22:19 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (1.8ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."fbid" IN ('224413', '709469', '1210034', '7902421', '14900737', '83503296', '201302134', '500173717', '500820656', '501300663', '501504926', '501684315', '504198043', '504215712', '507725729', '509847928', '512701549', '515925366', '516144912', '518005598', '525206998', '529895547', '536932938', '539975937', '540449278', '540877253', '555110645', '564928796', '572527567', '578645814', '580309807', '585502264', '588389045', '590459493', '591065064', '593207730', '597298697', '598205003', '601980661', '617946404', '620930283', '624083080', '625730264', '626307687', '646586789', '648183725', '650511069', '663321692', '664836830', '667551917', '669759326', '671756423', '673656437', '680922284', '681829391', '684753693', '686967452', '690380568', '690754337', '699926149', '702354889', '706053441', '709810312', '714186219', '714651198', '716342616', '717598474', '722873353', '724197798', '725082602', '727990709', '731657269', '736390343', '741690092', '749520374', '749555933', '764155283', '778320095', '787525863', '842860286', '855200153', '869590516', '888855363', '898585600', '1004364350', '1008804561', '1017640991', '1025461356', '1029593017', '1036381049', '1043396447', '1050183464', '1055280238', '1065871099', '1081057057', '1087197132', '1101385939', '1105802000', '1119533781', '1123790098', '1125221881', '1135441226', '1146150590', '1147435671', '1148850279', '1150961675', '1156170243', '1164556481', '1196676135', '1200870239', '1212593293', '1215577507', '1216615221', '1225020077', '1232400867', '1241610316', '1243020382', '1256868532', '1257443982', '1259721442', '1260220551', '1261434999', '1292516408', '1332870085', '1341660083', '1357526377', '1360725770', '1374591825', '1391430256', '1408897851', '1412794781', '1418175151', '1450602360', '1457964350', '1469657035', '1479150515', '1513080852', '1520297617', '1521540540', '1535180943', '1536790731', '1538520064', '1572450408', '1588412659', '1599690080', '1614063819', '1680750006', '1685836931', '1702843535', '1707426000', '1763756331', '100000067462407', '100000108438245', '100000119263266', '100000143001130', '100000145155733', '100000149020493', '100000152317738', '100000155832398', '100000159518079', '100000164791405', '100000182651805', '100000184985113', '100000200320696', '100000206852966', '100000213971413', '100000234654840', '100000238557952', '100000245358644', '100000259364019', '100000268234986', '100000288159949', '100000294752367', '100000296254180', '100000328008922', '100000338489055', '100000356624744', '100000691746375', '100000703272648', '100000725422325', '100000726882489', '100000735258503', '100000735902592', '100000751366029', '100000826640545', '100000939937730', '100000942603132', '100001224990036', '100001327240739', '100001445028860', '100001450296441', '100001470873900', '100001925363580', '100002153485676', '100002413062541', '100005894163651')
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."fbid" = '1605016083' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "friend_list" = '[{"fbid":"224413","name":"Anting Liu","gender":"female"},{"fbid":"709469","name":"Sidney Tsai","gender":"female"},{"fbid":"1210034","name":"Joyce Yang","gender":"female"},{"fbid":"7902421","name":"Ellen Kuo","gender":"female"},{"fbid":"14900737","name":"Jalila Bouchareb","gender":"female"},{"fbid":"83503296","name":"Heather Wilk","gender":"female"},{"fbid":"201302134","name":"Airica Prange","gender":"female"},{"fbid":"500173717","name":"Kelly Yu-Ju Chiu","gender":"female"},{"fbid":"500820656","name":"Tiantian Zhou","gender":"female"},{"fbid":"501300663","name":"Bettina Cheung","gender":"female"},{"fbid":"501504926","name":"Tendelle Sheu","gender":"female"},{"fbid":"501684315","name":"Victoria Sun","gender":"female"},{"fbid":"504198043","name":"Theresa Yeh","gender":"female"},{"fbid":"504215712","name":"Danielle Class","gender":"female"},{"fbid":"507725729","name":"Emma Chung","gender":"female"},{"fbid":"509847928","name":"Angela Park","gender":"female"},{"fbid":"512701549","name":"Anita Wang","gender":"female"},{"fbid":"515925366","name":"Mengjie Ding","gender":"female"},{"fbid":"516144912","name":"Amber Lin","gender":"female"},{"fbid":"518005598","name":"Niveditha Vathsangam","gender":"female"},{"fbid":"525206998","name":"Chia-Ling Pai","gender":"female"},{"fbid":"529895547","name":"Victoria Li","gender":"female"},{"fbid":"536932938","name":"Jennifer Tang","gender":"female"},{"fbid":"539975937","name":"Isabella Wei","gender":"female"},{"fbid":"540449278","name":"Angela Yin-Jen Wang","gender":"female"},{"fbid":"540877253","name":"Elaine Han","gender":"female"},{"fbid":"555110645","name":"Jasmine Huynh","gender":"female"},{"fbid":"564928796","name":"Sheila Xu","gender":"female"},{"fbid":"572527567","name":"Yun-Hsin Huang","gender":"female"},{"fbid":"578645814","name":"Michelle Wang","gender":"female"},{"fbid":"580309807","name":"Di Jin","gender":"female"},{"fbid":"585502264","name":"Shuhan W. May","gender":"female"},{"fbid":"588389045","name":"Jessica Li","gender":"female"},{"fbid":"590459493","name":"Lorelei Monteleone","gender":"female"},{"fbid":"591065064","name":"Joyce Chen","gender":"female"},{"fbid":"593207730","name":"Ayten K\u00fcbra T\u00fcrkmen","gender":"female"},{"fbid":"597298697","name":"Joy Sim","gender":"female"},{"fbid":"598205003","name":"Danielle Lynne Strachman","gender":"female"},{"fbid":"601980661","name":"Morgan Lai","gender":"female"},{"fbid":"617946404","name":"Eunice Lin","gender":"female"},{"fbid":"620930283","name":"Jill Catherine Rosok","gender":"female"},{"fbid":"624083080","name":"Mrudula Somu","gender":"female"},{"fbid":"625730264","name":"Juliann Shih","gender":"female"},{"fbid":"626307687","name":"Yinghui Wang","gender":"female"},{"fbid":"646586789","name":"Judy Chang","gender":"female"},{"fbid":"648183725","name":"Michelle Tsai","gender":"female"},{"fbid":"650511069","name":"Michelle Holtzhausen","gender":"female"},{"fbid":"663321692","name":"Aithne Sheng-Ying Pao","gender":"female"},{"fbid":"664836830","name":"Sophia Li","gender":"female"},{"fbid":"667551917","name":"\u674e\u5764\u73b2","gender":"female"},{"fbid":"669759326","name":"Wan-Ni Tsai Ubertsai","gender":"female"},{"fbid":"671756423","name":"Siyu Tao","gender":"female"},{"fbid":"673656437","name":"Wei-Shien Chang","gender":"female"},{"fbid":"680922284","name":"Jillian Shen","gender":"female"},{"fbid":"681829391","name":"Elizabeth Rowland","gender":"female"},{"fbid":"684753693","name":"Mao Ting","gender":"female"},{"fbid":"686967452","name":"Adaeze Ezeh","gender":"female"},{"fbid":"690380568","name":"Alberta Ngan","gender":"female"},{"fbid":"690754337","name":"Pooja Doshi","gender":"female"},{"fbid":"699926149","name":"Shawn Wen","gender":"female"},{"fbid":"702354889","name":"Xiaomin Wang","gender":"female"},{"fbid":"706053441","name":"Jacqueline Hung","gender":"female"},{"fbid":"709810312","name":"Xenia Antipova","gender":"female"},{"fbid":"714186219","name":"Joyce Chen","gender":"female"},{"fbid":"714651198","name":"Victoria Lu","gender":"female"},{"fbid":"716342616","name":"Linh N V\u01b0\u01a1ng","gender":"female"},{"fbid":"717598474","name":"Zier Liu","gender":"female"},{"fbid":"722873353","name":"Vicky Chen","gender":"female"},{"fbid":"724197798","name":"Rocker May Lin","gender":"female"},{"fbid":"725082602","name":"Hailey Kopp","gender":"female"},{"fbid":"727990709","name":"Ranna Zhou","gender":"female"},{"fbid":"731657269","name":"Eeway Hsu","gender":"female"},{"fbid":"736390343","name":"Junyao Jy Song","gender":"female"},{"fbid":"741690092","name":"Jing Jian","gender":"female"},{"fbid":"749520374","name":"Kristen Wu","gender":"female"},{"fbid":"749555933","name":"Debbie Yu","gender":"female"},{"fbid":"764155283","name":"Shuo Wang","gender":"female"},{"fbid":"778320095","name":"Angela N. Chang","gender":"female"},{"fbid":"787525863","name":"Chen Po-Jung","gender":"female"},{"fbid":"842860286","name":"Abby Huang","gender":"female"},{"fbid":"855200153","name":"Candace Chen","gender":"female"},{"fbid":"869590516","name":"Berta Liao Narbonne","gender":"female"},{"fbid":"888855363","name":"Grace Vicki","gender":"female"},{"fbid":"898585600","name":"Alina Rwei","gender":"female"},{"fbid":"1004364350","name":"Nicole Fong","gender":"female"},{"fbid":"1008804561","name":"Rachel W. Gibson","gender":"female"},{"fbid":"1017640991","name":"Rebecca Wu","gender":"female"},{"fbid":"1025461356","name":"Stephanie N. Chang","gender":"female"},{"fbid":"1029593017","name":"Sherry Hui Xiao Chao","gender":"female"},{"fbid":"1036381049","name":"Stephanie Chen","gender":"female"},{"fbid":"1043396447","name":"Carolyn Coyle","gender":"female"},{"fbid":"1050183464","name":"Chia-i Cheng","gender":"female"},{"fbid":"1055280238","name":"Liz Jensen","gender":"female"},{"fbid":"1065871099","name":"Sabina Sood","gender":"female"},{"fbid":"1081057057","name":"Rae Kuo","gender":"female"},{"fbid":"1087197132","name":"\u90b1\u85b0\u5100","gender":"female"},{"fbid":"1101385939","name":"Yvonne Su","gender":"female","id":1},{"fbid":"1105802000","name":"Amanda David","gender":"female"},{"fbid":"1119533781","name":"Tiffany Huang","gender":"female"},{"fbid":"1123790098","name":"Catherine Kuo","gender":"female"},{"fbid":"1125221881","name":"Tara Soni","gender":"female"},{"fbid":"1135441226","name":"\u66fe\u4f9d\u6674","gender":"female"},{"fbid":"1146150590","name":"Molly McShane","gender":"female"},{"fbid":"1147435671","name":"Jennifer Hsueh","gender":"female"},{"fbid":"1148850279","name":"Sophie Chung","gender":"female"},{"fbid":"1150961675","name":"Sharon Pan","gender":"female"},{"fbid":"1156170243","name":"Liza X","gender":"female"},{"fbid":"1164556481","name":"Laura Deming","gender":"female"},{"fbid":"1196676135","name":"Fan Wei","gender":"female"},{"fbid":"1200870239","name":"Rachel Bowman","gender":"female"},{"fbid":"1212593293","name":"Sonya Juang","gender":"female"},{"fbid":"1215577507","name":"Sandi Howell Hunt","gender":"female"},{"fbid":"1216615221","name":"Yunzhi Gao","gender":"female"},{"fbid":"1225020077","name":"Ana Chen","gender":"female"},{"fbid":"1232400867","name":"Jean Fang","gender":"female"},{"fbid":"1241610316","name":"Aparna Sud","gender":"female"},{"fbid":"1243020382","name":"Sheena Jindal","gender":"female"},{"fbid":"1256868532","name":"Yuwei Zhang","gender":"female"},{"fbid":"1257443982","name":"Fangheng Zhou","gender":"female"},{"fbid":"1259721442","name":"Jane Wang","gender":"female"},{"fbid":"1260220551","name":"Diana Hsieh","gender":"female"},{"fbid":"1261434999","name":"Lily Yingyi Gu","gender":"female"},{"fbid":"1292516408","name":"Vivian Su","gender":"female"},{"fbid":"1332870085","name":"Jenny Xie","gender":"female"},{"fbid":"1341660083","name":"Nahyun Cho","gender":"female"},{"fbid":"1357526377","name":"Iovana Valdez","gender":"female"},{"fbid":"1360725770","name":"Lina Song","gender":"female"},{"fbid":"1374591825","name":"YuJen Lai","gender":"female"},{"fbid":"1391430256","name":"Alyse Cardell","gender":"female"},{"fbid":"1408897851","name":"Wan-Zi Mandy Lu","gender":"female"},{"fbid":"1412794781","name":"Lin WenYing","gender":"female"},{"fbid":"1418175151","name":"Minshu Zhan","gender":"female"},{"fbid":"1450602360","name":"Patricia Adriana","gender":"female"},{"fbid":"1457964350","name":"Anna Falvello Tomas","gender":"female"},{"fbid":"1469657035","name":"Rong-i Shen","gender":"female"},{"fbid":"1479150515","name":"Brinda Vijaykumar","gender":"female"},{"fbid":"1513080852","name":"Jisoo G-Sue Kim","gender":"female"},{"fbid":"1520297617","name":"Tiffany Tang","gender":"female"},{"fbid":"1521540540","name":"Marianna See","gender":"female"},{"fbid":"1535180943","name":"Pei-Wen Hung","gender":"female"},{"fbid":"1536790731","name":"Megan Chang","gender":"female"},{"fbid":"1538520064","name":"Grace Yao","gender":"female"},{"fbid":"1572450408","name":"Sudha Guttikonda","gender":"female"},{"fbid":"1588412659","name":"Dee Hsieh","gender":"female"},{"fbid":"1599690080","name":"Clare Frigo","gender":"female"},{"fbid":"1614063819","name":"Xiao Yun Chang","gender":"female"},{"fbid":"1680750006","name":"Fioni Ch","gender":"female"},{"fbid":"1685836931","name":"Ying-Yu Chen","gender":"female"},{"fbid":"1702843535","name":"Yangzhou Hu","gender":"female"},{"fbid":"1707426000","name":"Clara Shiyang","gender":"female"},{"fbid":"1763756331","name":"Meihuei Hu","gender":"female"},{"fbid":"100000067462407","name":"Cheng Chen","gender":"female"},{"fbid":"100000108438245","name":"Reese Ling","gender":"female"},{"fbid":"100000119263266","name":"Hikaru Miyazaki","gender":"female"},{"fbid":"100000143001130","name":"\u8d99\u82e5\u742a","gender":"female"},{"fbid":"100000145155733","name":"Karine Yuki","gender":"female"},{"fbid":"100000149020493","name":"Joyce Chen","gender":"female"},{"fbid":"100000152317738","name":"Tsai PeiChen","gender":"female"},{"fbid":"100000155832398","name":"Alicia Wang","gender":"female"},{"fbid":"100000159518079","name":"Marie Chang","gender":"female"},{"fbid":"100000164791405","name":"Fang-i Chen","gender":"female"},{"fbid":"100000182651805","name":"Sabrina Yu","gender":"female"},{"fbid":"100000184985113","name":"Hsuan Ju Wang","gender":"female"},{"fbid":"100000200320696","name":"Fang Yi Chu","gender":"female"},{"fbid":"100000206852966","name":"\u6f58\u9999\u6afb","gender":"female"},{"fbid":"100000213971413","name":"\u6c5f\u79c9\u5bb9","gender":"female"},{"fbid":"100000234654840","name":"Carrie Liu","gender":"female"},{"fbid":"100000238557952","name":"Pin Hsuan Sage Chang","gender":"female"},{"fbid":"100000245358644","name":"\u859b\u7136","gender":"female"},{"fbid":"100000259364019","name":"Vivian Mu Yi Lee","gender":"female"},{"fbid":"100000268234986","name":"Wanda Yu","gender":"female"},{"fbid":"100000288159949","name":"Xin-Rei Liao","gender":"female"},{"fbid":"100000294752367","name":"Chiu E Yang","gender":"female"},{"fbid":"100000296254180","name":"Veronica Barrera","gender":"female"},{"fbid":"100000328008922","name":"Yifan Wu","gender":"female"},{"fbid":"100000338489055","name":"Ling-Ya Monica Chao","gender":"female"},{"fbid":"100000356624744","name":"Weiting Chen","gender":"female"},{"fbid":"100000691746375","name":"\u6613\u5b50\u6db5","gender":"female"},{"fbid":"100000703272648","name":"Navi Ivan","gender":"female"},{"fbid":"100000725422325","name":"Season Lin","gender":"female"},{"fbid":"100000726882489","name":"Yanlin Fang","gender":"female"},{"fbid":"100000735258503","name":"Mei Zuo","gender":"female"},{"fbid":"100000735902592","name":"Carolina Lin","gender":"female"},{"fbid":"100000751366029","name":"\u7518\u5b50\u7433","gender":"female"},{"fbid":"100000826640545","name":"\u8cf4\u6021\u5b89","gender":"female"},{"fbid":"100000939937730","name":"\u66fe\u9edb\u541b","gender":"female"},{"fbid":"100000942603132","name":"\u5433\u5b87","gender":"female"},{"fbid":"100001224990036","name":"\u90ed\u76c8\u59a4","gender":"female"},{"fbid":"100001327240739","name":"Xiao Guo","gender":"female"},{"fbid":"100001445028860","name":"\u9ec3\u4ee5\u7444","gender":"female"},{"fbid":"100001450296441","name":"Sophie Bai","gender":"female"},{"fbid":"100001470873900","name":"Joy Aragon","gender":"female"},{"fbid":"100001925363580","name":"Yuan Pang","gender":"female"},{"fbid":"100002153485676","name":"Saki Fujita","gender":"female"},{"fbid":"100002413062541","name":"Katrina Chen","gender":"female"},{"fbid":"100005894163651","name":"Alpaca Jackson","gender":"female"}]', "updated_at" = '2013-10-01 03:22:19.927247' WHERE "users"."id" = 1[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+Completed 200 OK in 646ms (Views: 9.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/account?locale=en" for 127.0.0.1 at 2013-09-30 23:22:25 -0400
+Processing by UsersController#account as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/account.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:22:25 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-30 23:22:28 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/users/1?locale=en
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1?locale=en" for 127.0.0.1 at 2013-09-30 23:22:28 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.0ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.0ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.0ms)
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:22:28 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-09-30 23:22:28 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/zh_tw/users/1" for 127.0.0.1 at 2013-09-30 23:22:31 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"zh_tw", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225490665240 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.5ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225490665240 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.4ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225490665240 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.7ms)
+  Rendered users/show.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:22:31 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/zh_tw/users/1/showfriendslist" for 127.0.0.1 at 2013-09-30 23:22:31 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"locale"=>"zh_tw", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/en/users/1" for 127.0.0.1 at 2013-09-30 23:22:33 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.0ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.0ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___3972154171510925789_70225548979380 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.0ms)
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:22:33 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/en/users/1/showfriendslist" for 127.0.0.1 at 2013-09-30 23:22:33 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/en/profiles/show_profile/1101385939" for 127.0.0.1 at 2013-09-30 23:22:35 -0400
+Processing by ProfilesController#show_profile as HTML
+  Parameters: {"locale"=>"en", "fbid"=>"1101385939"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "profiles" WHERE "profiles"."fbid" = '1101385939'
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."fbid" = '1101385939'[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "favorites" WHERE "favorites"."user_id" = 1 AND "favorites"."profile_id" = 1
+  [1m[36mComment Load (0.8ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profile_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = 1 AND "votes"."up" = 'true'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = 1 AND "votes"."up" = 'false'
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___844009585425071342_70225549658460 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/profiles/show.html.erb:74)
+  Rendered profiles/_comments.js (0.6ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___844009585425071342_70225549658460 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/profiles/show.html.erb:78)
+  Rendered profiles/_rating.js (0.7ms)
+  Rendered profiles/show.html.erb within layouts/application (73.8ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 940ms (Views: 76.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:22:36 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/thumbsup.png" for 127.0.0.1 at 2013-09-30 23:22:36 -0400
+Served asset /thumbsup.png - 200 OK (1ms)
+
+
+Started GET "/assets/thumbsdown.png" for 127.0.0.1 at 2013-09-30 23:22:36 -0400
+Served asset /thumbsdown.png - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-09-30 23:22:36 -0400
+Served asset /jquery.raty/star-off.png - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-09-30 23:22:36 -0400
+Served asset /jquery.raty/cancel-off.png - 200 OK (2ms)
+
+
+Started GET "/profiles/1/getRatings" for 127.0.0.1 at 2013-09-30 23:22:36 -0400
+Processing by ProfilesController#getRatings as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 1 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 1 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'IQ'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 1 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 1 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Bangability'
+Completed 200 OK in 239ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.raty/cancel-on.png" for 127.0.0.1 at 2013-09-30 23:22:38 -0400
+Served asset /jquery.raty/cancel-on.png - 200 OK (2ms)
+
+
+Started GET "/en/profiles/show_profile/1101385939" for 127.0.0.1 at 2013-09-30 23:22:44 -0400
+Processing by ProfilesController#show_profile as HTML
+  Parameters: {"locale"=>"en", "fbid"=>"1101385939"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "profiles" WHERE "profiles"."fbid" = '1101385939'[0m
+  [1m[35mProfile Load (0.4ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."fbid" = '1101385939'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."user_id" = 1 AND "favorites"."profile_id" = 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."profile_id" = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = 1 AND "votes"."up" = 'true'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = 1 AND "votes"."up" = 'false'[0m
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___844009585425071342_70225549658460 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/profiles/show.html.erb:74)
+  Rendered profiles/_comments.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___844009585425071342_70225549658460 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca/app/views/profiles/show.html.erb:78)
+  Rendered profiles/_rating.js (0.1ms)
+  Rendered profiles/show.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 616ms (Views: 10.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-09-30 23:22:45 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/profiles/1/getRatings" for 127.0.0.1 at 2013-09-30 23:22:45 -0400
+Processing by ProfilesController#getRatings as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 1 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 1 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'IQ'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 1 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 1 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Bangability'[0m
+Completed 200 OK in 245ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-01 20:26:49 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (6.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/users/1?locale=en
+Completed 302 Found in 28ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/users/1?locale=en" for 127.0.0.1 at 2013-10-01 20:26:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.5ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.4ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.7ms)
+  Rendered users/show.html.erb within layouts/application (1638.9ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 200 OK in 1677ms (Views: 1676.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 20:26:51 -0400
+Compiled i18n/translations.js  (1155ms)  (pid 6993)
+Compiled application.js  (26ms)  (pid 6993)
+Served asset /application.js - 304 Not Modified (1450ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 20:26:53 -0400
+Served asset /application.css - 200 OK (67ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-10-01 20:26:53 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-10-01 20:26:53 -0400
+Served asset /glyphicons-halflings.png - 200 OK (5ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-10-01 20:26:53 -0400
+Served asset /jquery-ui/ui-bg_flat_75_ffffff_40x100.png - 200 OK (3ms)
+
+
+Started GET "/en/profiles/show_profile/512701549" for 127.0.0.1 at 2013-10-01 20:26:56 -0400
+Processing by ProfilesController#show_profile as HTML
+  Parameters: {"locale"=>"en", "fbid"=>"512701549"}
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "profiles" WHERE "profiles"."fbid" = '512701549'[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProfile Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "profiles" WHERE "profiles"."fbid" = '512701549' LIMIT 1[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "profiles" ("created_at", "fbid", "total_ratings", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Wed, 02 Oct 2013 00:26:57 UTC +00:00], ["fbid", "512701549"], ["total_ratings", "{}"], ["updated_at", Wed, 02 Oct 2013 00:26:57 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "favorites" WHERE "favorites"."user_id" = 1 AND "favorites"."profile_id" = 2
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profile_id" = 2[0m
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:74)
+  Rendered profiles/_comments.js (0.6ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:78)
+  Rendered profiles/_rating.js (0.6ms)
+  Rendered profiles/show.html.erb within layouts/application (25.1ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 1724ms (Views: 30.6ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 20:26:58 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:26:58 -0400
+Served asset /jquery.raty/star-off.png - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:26:58 -0400
+Served asset /jquery.raty/cancel-off.png - 200 OK (2ms)
+
+
+Started GET "/profiles/2/getRatings" for 127.0.0.1 at 2013-10-01 20:26:58 -0400
+Processing by ProfilesController#getRatings as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mProfile Load (0.2ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'IQ'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Bangability'[0m
+Completed 200 OK in 677ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/en/profiles/show_profile/512701549" for 127.0.0.1 at 2013-10-01 20:28:28 -0400
+Processing by ProfilesController#show_profile as HTML
+  Parameters: {"locale"=>"en", "fbid"=>"512701549"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "profiles" WHERE "profiles"."fbid" = '512701549'
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."fbid" = '512701549'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "favorites" WHERE "favorites"."user_id" = 1 AND "favorites"."profile_id" = 2
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profile_id" = 2[0m
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:74)
+  Rendered profiles/_comments.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:78)
+  Rendered profiles/_rating.js (0.6ms)
+  Rendered profiles/show.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 1548ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 20:28:30 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 20:28:30 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:30 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:28:30 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/profiles/2/getRatings" for 127.0.0.1 at 2013-10-01 20:28:30 -0400
+Processing by ProfilesController#getRatings as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'IQ'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Bangability'[0m
+Completed 200 OK in 320ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:30 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:28:30 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/en/profiles/show_profile/512701549" for 127.0.0.1 at 2013-10-01 20:28:49 -0400
+Processing by ProfilesController#show_profile as HTML
+  Parameters: {"locale"=>"en", "fbid"=>"512701549"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "profiles" WHERE "profiles"."fbid" = '512701549'
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."fbid" = '512701549'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "favorites" WHERE "favorites"."user_id" = 1 AND "favorites"."profile_id" = 2
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profile_id" = 2[0m
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:74)
+  Rendered profiles/_comments.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:78)
+  Rendered profiles/_rating.js (0.6ms)
+  Rendered profiles/show.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 928ms (Views: 12.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 20:28:50 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 20:28:50 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:50 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:28:50 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/profiles/2/getRatings" for 127.0.0.1 at 2013-10-01 20:28:50 -0400
+Processing by ProfilesController#getRatings as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'IQ'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Bangability'[0m
+Completed 200 OK in 257ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:50 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:28:50 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-on.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-on.png - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started POST "/profiles/2/ratings.json" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Processing by RatingsController#create as JSON
+  Parameters: {"categ"=>"Appearances", "rate"=>"3.5", "profile_id"=>"2"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mRating Exists (0.1ms)[0m  SELECT 1 AS one FROM "ratings" WHERE ("ratings"."category" = 'Appearances' AND "ratings"."user_id" = 1 AND "ratings"."profile_id" = 2) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "ratings" ("category", "created_at", "profile_id", "rate", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category", "Appearances"], ["created_at", Wed, 02 Oct 2013 00:28:51 UTC +00:00], ["profile_id", 2], ["rate", 3.5], ["updated_at", Wed, 02 Oct 2013 00:28:51 UTC +00:00], ["user_id", 1]]
+  [1m[35m (7.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "profiles" SET "total_ratings" = '{"Appearances":{"sum":3.5,"number":1}}', "updated_at" = '2013-10-02 00:28:51.785273' WHERE "profiles"."id" = 2
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mProfile Load (0.2ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'[0m
+  [1m[35mRating Load (0.2ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'
+Completed 200 OK in 62ms (Views: 0.3ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:28:51 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started PUT "/profiles/2/ratings.json" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Processing by RatingsController#update as JSON
+  Parameters: {"categ"=>"Appearances", "rate"=>"4", "profile_id"=>"2"}
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mRating Load (0.1ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "profiles" SET "total_ratings" = '{"Appearances":{"sum":4.0,"number":1}}', "updated_at" = '2013-10-02 00:28:52.870992' WHERE "profiles"."id" = 2
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "ratings" SET "rate" = 4.0, "updated_at" = '2013-10-02 00:28:52.874954' WHERE "ratings"."id" = 1[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'
+  [1m[36mRating Load (0.1ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'[0m
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:28:52 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:53 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:53 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:28:53 -0400
+Served asset /jquery.raty/star-off.png - 200 OK (0ms)
+
+
+Started GET "/en/profiles/show_profile/512701549" for 127.0.0.1 at 2013-10-01 20:28:59 -0400
+Processing by ProfilesController#show_profile as HTML
+  Parameters: {"locale"=>"en", "fbid"=>"512701549"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "profiles" WHERE "profiles"."fbid" = '512701549'
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."fbid" = '512701549'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "favorites" WHERE "favorites"."user_id" = 1 AND "favorites"."profile_id" = 2
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profile_id" = 2[0m
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:74)
+  Rendered profiles/_comments.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:78)
+  Rendered profiles/_rating.js (0.7ms)
+  Rendered profiles/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 1424ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 20:29:01 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 20:29:01 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:01 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:29:01 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/profiles/2/getRatings" for 127.0.0.1 at 2013-10-01 20:29:01 -0400
+Processing by ProfilesController#getRatings as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'
+  [1m[36mRating Load (0.1ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'IQ'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Bangability'
+Completed 200 OK in 325ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:01 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:29:01 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started POST "/profiles/2/ratings.json" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Processing by RatingsController#create as JSON
+  Parameters: {"categ"=>"EQ", "rate"=>"4", "profile_id"=>"2"}
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mRating Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "ratings" WHERE ("ratings"."category" = 'EQ' AND "ratings"."user_id" = 1 AND "ratings"."profile_id" = 2) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ratings" ("category", "created_at", "profile_id", "rate", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["category", "EQ"], ["created_at", Wed, 02 Oct 2013 00:29:02 UTC +00:00], ["profile_id", 2], ["rate", 4.0], ["updated_at", Wed, 02 Oct 2013 00:29:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "profiles" SET "total_ratings" = '{"Appearances":{"sum":4.0,"number":1},"EQ":{"sum":4.0,"number":1}}', "updated_at" = '2013-10-02 00:29:02.838202' WHERE "profiles"."id" = 2[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'
+  [1m[36mRating Load (0.1ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:29:02 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:03 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:04 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:05 -0400
+Served asset /jquery.raty/star-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:05 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:05 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:05 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:05 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-01 20:29:05 -0400
+Served asset /jquery.raty/star-off.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:05 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:05 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:05 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started PUT "/profiles/2/ratings.json" for 127.0.0.1 at 2013-10-01 20:29:06 -0400
+Processing by RatingsController#update as JSON
+  Parameters: {"categ"=>"EQ", "rate"=>"3.5", "profile_id"=>"2"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mRating Load (0.1ms)[0m  [1mSELECT "ratings".* FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "profiles" SET "total_ratings" = '{"Appearances":{"sum":4.0,"number":1},"EQ":{"sum":3.5,"number":1}}', "updated_at" = '2013-10-02 00:29:06.057907' WHERE "profiles"."id" = 2[0m
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "ratings" SET "rate" = 3.5, "updated_at" = '2013-10-02 00:29:06.061343' WHERE "ratings"."id" = 2
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'[0m
+  [1m[35mRating Load (0.1ms)[0m  SELECT "ratings".* FROM "ratings" WHERE "ratings"."profile_id" = 2 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-01 20:29:06 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-01 20:29:06 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-01 20:29:06 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/users/1?locale=en
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1?locale=en" for 127.0.0.1 at 2013-10-01 20:29:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.0ms)
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 20:29:06 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 20:29:06 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-10-01 20:29:06 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1?locale=en" for 127.0.0.1 at 2013-10-01 20:29:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.0ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.7ms)
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 20:29:36 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 20:29:36 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-10-01 20:29:36 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-10-01 20:29:36 -0400
+Served asset /jquery-ui/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-10-01 20:29:36 -0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/1?locale=en" for 127.0.0.1 at 2013-10-01 20:29:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.6ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.1ms)
+  Rendered users/show.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 20:29:52 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 20:29:52 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-10-01 20:29:52 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-10-01 20:29:53 -0400
+Served asset /jquery-ui/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-10-01 20:29:53 -0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-01 21:54:29 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/users/1?locale=en
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1?locale=en" for 127.0.0.1 at 2013-10-01 21:54:29 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.0ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.1ms)
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 21:54:29 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 21:54:29 -0400
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-10-01 21:54:29 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-10-01 21:54:29 -0400
+Served asset /jquery-ui/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-10-01 21:54:29 -0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (1ms)
+
+
+Started GET "/zh_cn/users/1" for 127.0.0.1 at 2013-10-01 21:54:34 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"zh_cn", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276273802120 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (1.0ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276273802120 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.4ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276273802120 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.5ms)
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 21:54:34 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 21:54:34 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/zh_cn/users/1/showfriendslist" for 127.0.0.1 at 2013-10-01 21:54:34 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"locale"=>"zh_cn", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-10-01 21:54:34 -0400
+Served asset /jquery-ui/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-10-01 21:54:34 -0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/en/users/1" for 127.0.0.1 at 2013-10-01 21:54:37 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.0ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.0ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.0ms)
+  Rendered users/show.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-01 21:54:37 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-01 21:54:37 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/en/users/1/showfriendslist" for 127.0.0.1 at 2013-10-01 21:54:37 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"locale"=>"en", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-10-01 21:54:37 -0400
+Served asset /jquery-ui/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-10-01 21:54:37 -0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/en/profiles/show_profile/898585600" for 127.0.0.1 at 2013-10-02 15:13:27 -0400
+Processing by ProfilesController#show_profile as HTML
+  Parameters: {"locale"=>"en", "fbid"=>"898585600"}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "profiles" WHERE "profiles"."fbid" = '898585600'[0m
+  [1m[35m (0.8ms)[0m  begin transaction
+  [1m[36mProfile Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "profiles" WHERE "profiles"."fbid" = '898585600' LIMIT 1[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "profiles" ("created_at", "fbid", "total_ratings", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Wed, 02 Oct 2013 19:13:28 UTC +00:00], ["fbid", "898585600"], ["total_ratings", "{}"], ["updated_at", Wed, 02 Oct 2013 19:13:28 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "favorites" WHERE "favorites"."user_id" = 1 AND "favorites"."profile_id" = 3
+  [1m[36mComment Load (1.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profile_id" = 3[0m
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:74)
+  Rendered profiles/_comments.js (0.7ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_profiles_show_html_erb___4571235059638988884_70276273473880 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/profiles/show.html.erb:78)
+  Rendered profiles/_rating.js (0.2ms)
+  Rendered profiles/show.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_header.html.erb (13.0ms)
+Completed 200 OK in 944ms (Views: 68.3ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-02 15:13:29 -0400
+Served asset /application.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-02 15:13:29 -0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.raty/star-off.png" for 127.0.0.1 at 2013-10-02 15:13:29 -0400
+Served asset /jquery.raty/star-off.png - 200 OK (1ms)
+
+
+Started GET "/profiles/3/getRatings" for 127.0.0.1 at 2013-10-02 15:13:29 -0400
+Processing by ProfilesController#getRatings as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35mProfile Load (0.2ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 3 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Appearances'
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 3 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'IQ'[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 3 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'EQ'
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."profile_id" = 3 AND "ratings"."user_id" = 1 AND "ratings"."category" = 'Bangability'[0m
+Completed 200 OK in 283ms (Views: 0.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/jquery.raty/cancel-off.png" for 127.0.0.1 at 2013-10-02 15:13:30 -0400
+Served asset /jquery.raty/cancel-off.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-on.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-on.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:31 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started POST "/profiles/3/comments.json" for 127.0.0.1 at 2013-10-02 15:13:33 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"body"=>"asdfasdf", "profile_id"=>"3"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "comments" ("body", "created_at", "downvote", "profile_id", "updated_at", "upvote", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["body", "asdfasdf"], ["created_at", Wed, 02 Oct 2013 19:13:33 UTC +00:00], ["downvote", 0], ["profile_id", 3], ["updated_at", Wed, 02 Oct 2013 19:13:33 UTC +00:00], ["upvote", 0], ["user_id", 1]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/thumbsup.png" for 127.0.0.1 at 2013-10-02 15:13:33 -0400
+Served asset /thumbsup.png - 200 OK (11ms)
+
+
+Started GET "/assets/thumbsdown.png" for 127.0.0.1 at 2013-10-02 15:13:33 -0400
+Served asset /thumbsdown.png - 200 OK (1ms)
+
+
+Started GET "/assets/thumbsup_on.png" for 127.0.0.1 at 2013-10-02 15:13:35 -0400
+Served asset /thumbsup_on.png - 200 OK (2ms)
+
+
+Started GET "/assets/thumbsup.png" for 127.0.0.1 at 2013-10-02 15:13:35 -0400
+Served asset /thumbsup.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/thumbsdown_on.png" for 127.0.0.1 at 2013-10-02 15:13:35 -0400
+Served asset /thumbsdown_on.png - 200 OK (1ms)
+
+
+Started GET "/assets/thumbsdown.png" for 127.0.0.1 at 2013-10-02 15:13:35 -0400
+Served asset /thumbsdown.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-on.png" for 127.0.0.1 at 2013-10-02 15:13:36 -0400
+Served asset /jquery.raty/star-on.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:36 -0400
+Served asset /jquery.raty/star-half.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.raty/star-half.png" for 127.0.0.1 at 2013-10-02 15:13:36 -0400
+Served asset /jquery.raty/star-half.png - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.raty/star-on.png" for 127.0.0.1 at 2013-10-02 15:13:36 -0400
+Served asset /jquery.raty/star-on.png - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-10-02 15:13:40 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-02 15:13:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-02 15:13:40 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-02 15:13:40 -0400
+Served asset /application.js - 304 Not Modified (30ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2013-10-02 15:13:42 -0400
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/facebook
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-10-02 15:13:42 -0400
+
+
+Started GET "/auth/facebook/callback?code=AQASS3d2GZ8GHYqbFRovXSTk3OtRxorPsKjzUO1-k2Vxv6GBevf_mfa8PyLqUOtKFUQ-GSViOjmZnXun9_vdPnctOcyGnUlpNIbnSVj8WRmgOnACM8AY-1pUETxHQRceRV5R1f7kMYiVI8lpgwWk8UWJIAiLJVXQZKOnQBsGUHcwVoduV6BAkrNl9-Ww0hIkR-Osfef1Cvpvoer--j_twUTcSE2uMz-pHnuFm1ji331Iv2xRtWo8g9NGPBSmPvY5ApCmzs404tnmcI0ot_jtzcWBKDMLMe17d1PFEnM5mz1M1ILA26Io0B3ZkXNrodXHIEM" for 127.0.0.1 at 2013-10-02 15:13:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQASS3d2GZ8GHYqbFRovXSTk3OtRxorPsKjzUO1-k2Vxv6GBevf_mfa8PyLqUOtKFUQ-GSViOjmZnXun9_vdPnctOcyGnUlpNIbnSVj8WRmgOnACM8AY-1pUETxHQRceRV5R1f7kMYiVI8lpgwWk8UWJIAiLJVXQZKOnQBsGUHcwVoduV6BAkrNl9-Ww0hIkR-Osfef1Cvpvoer--j_twUTcSE2uMz-pHnuFm1ji331Iv2xRtWo8g9NGPBSmPvY5ApCmzs404tnmcI0ot_jtzcWBKDMLMe17d1PFEnM5mz1M1ILA26Io0B3ZkXNrodXHIEM", "provider"=>"facebook"}
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."fbid" = '1605016083' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."fbid" = '1605016083' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "friend_list" = NULL, "updated_at" = '2013-10-02 19:13:45.144511' WHERE "users"."id" = 1[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 304ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-02 15:13:45 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.1ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.1ms)
+  Rendered users/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-10-02 15:13:45 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-10-02 15:13:45 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-10-02 15:13:45 -0400
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (1.8ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."fbid" IN ('224413', '709469', '1210034', '7902421', '14900737', '83503296', '201302134', '500173717', '500820656', '501300663', '501504926', '501684315', '504198043', '504215712', '507725729', '509847928', '512701549', '515925366', '516144912', '518005598', '525206998', '529895547', '536932938', '539975937', '540449278', '540877253', '555110645', '564928796', '572527567', '578645814', '580309807', '585502264', '588389045', '590459493', '591065064', '593207730', '597298697', '598205003', '617946404', '620930283', '624083080', '625730264', '626307687', '646586789', '648183725', '650511069', '663321692', '664836830', '667551917', '669759326', '671756423', '673656437', '680922284', '681829391', '684753693', '686967452', '690380568', '690754337', '699926149', '702354889', '706053441', '709810312', '714186219', '714651198', '716342616', '717598474', '722873353', '724197798', '725082602', '727990709', '731657269', '736390343', '741690092', '749520374', '749555933', '764155283', '778320095', '787525863', '842860286', '855200153', '869590516', '888855363', '898585600', '1004364350', '1008804561', '1017640991', '1025461356', '1029593017', '1036381049', '1043396447', '1050183464', '1055280238', '1065871099', '1081057057', '1087197132', '1101385939', '1105802000', '1119533781', '1123790098', '1125221881', '1135441226', '1146150590', '1147435671', '1148850279', '1150961675', '1156170243', '1164556481', '1196676135', '1200870239', '1212593293', '1215577507', '1216615221', '1225020077', '1232400867', '1241610316', '1243020382', '1256868532', '1257443982', '1259721442', '1260220551', '1261434999', '1292516408', '1332870085', '1341660083', '1357526377', '1360725770', '1374591825', '1391430256', '1408897851', '1412794781', '1418175151', '1450602360', '1457964350', '1469657035', '1479150515', '1513080852', '1520297617', '1521540540', '1535180943', '1536790731', '1538520064', '1572450408', '1588412659', '1599690080', '1614063819', '1680750006', '1685836931', '1702843535', '1707426000', '1763756331', '100000067462407', '100000108438245', '100000119263266', '100000143001130', '100000145155733', '100000149020493', '100000152317738', '100000155832398', '100000159518079', '100000164791405', '100000182651805', '100000184985113', '100000200320696', '100000206852966', '100000213971413', '100000234654840', '100000238557952', '100000245358644', '100000259364019', '100000268234986', '100000288159949', '100000294752367', '100000296254180', '100000328008922', '100000338489055', '100000356624744', '100000691746375', '100000703272648', '100000725422325', '100000726882489', '100000735258503', '100000735902592', '100000751366029', '100000826640545', '100000939937730', '100000942603132', '100001224990036', '100001327240739', '100001445028860', '100001450296441', '100001470873900', '100001925363580', '100002153485676', '100002413062541', '100005894163651')
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."fbid" = '1605016083' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "friend_list" = '[{"fbid":"224413","name":"Anting Liu","gender":"female"},{"fbid":"709469","name":"Sidney Tsai","gender":"female"},{"fbid":"1210034","name":"Joyce Yang","gender":"female"},{"fbid":"7902421","name":"Ellen Kuo","gender":"female"},{"fbid":"14900737","name":"Jalila Bouchareb","gender":"female"},{"fbid":"83503296","name":"Heather Wilk","gender":"female"},{"fbid":"201302134","name":"Airica Prange","gender":"female"},{"fbid":"500173717","name":"Kelly Yu-Ju Chiu","gender":"female"},{"fbid":"500820656","name":"Tiantian Zhou","gender":"female"},{"fbid":"501300663","name":"Bettina Cheung","gender":"female"},{"fbid":"501504926","name":"Tendelle Sheu","gender":"female"},{"fbid":"501684315","name":"Victoria Sun","gender":"female"},{"fbid":"504198043","name":"Theresa Yeh","gender":"female"},{"fbid":"504215712","name":"Danielle Class","gender":"female"},{"fbid":"507725729","name":"Emma Chung","gender":"female"},{"fbid":"509847928","name":"Angela Park","gender":"female"},{"fbid":"512701549","name":"Anita Wang","gender":"female","id":2},{"fbid":"515925366","name":"Mengjie Ding","gender":"female"},{"fbid":"516144912","name":"Amber Lin","gender":"female"},{"fbid":"518005598","name":"Niveditha Vathsangam","gender":"female"},{"fbid":"525206998","name":"Chia-Ling Pai","gender":"female"},{"fbid":"529895547","name":"Victoria Li","gender":"female"},{"fbid":"536932938","name":"Jennifer Tang","gender":"female"},{"fbid":"539975937","name":"Isabella Wei","gender":"female"},{"fbid":"540449278","name":"Angela Yin-Jen Wang","gender":"female"},{"fbid":"540877253","name":"Elaine Han","gender":"female"},{"fbid":"555110645","name":"Jasmine Huynh","gender":"female"},{"fbid":"564928796","name":"Sheila Xu","gender":"female"},{"fbid":"572527567","name":"Yun-Hsin Huang","gender":"female"},{"fbid":"578645814","name":"Michelle Wang","gender":"female"},{"fbid":"580309807","name":"Di Jin","gender":"female"},{"fbid":"585502264","name":"Shuhan W. May","gender":"female"},{"fbid":"588389045","name":"Jessica Li","gender":"female"},{"fbid":"590459493","name":"Lorelei Monteleone","gender":"female"},{"fbid":"591065064","name":"Joyce Chen","gender":"female"},{"fbid":"593207730","name":"Ayten K\u00fcbra T\u00fcrkmen","gender":"female"},{"fbid":"597298697","name":"Joy Sim","gender":"female"},{"fbid":"598205003","name":"Danielle Lynne Strachman","gender":"female"},{"fbid":"617946404","name":"Eunice Lin","gender":"female"},{"fbid":"620930283","name":"Jill Catherine Rosok","gender":"female"},{"fbid":"624083080","name":"Mrudula Somu","gender":"female"},{"fbid":"625730264","name":"Juliann Shih","gender":"female"},{"fbid":"626307687","name":"Yinghui Wang","gender":"female"},{"fbid":"646586789","name":"Judy Chang","gender":"female"},{"fbid":"648183725","name":"Michelle Tsai","gender":"female"},{"fbid":"650511069","name":"Michelle Holtzhausen","gender":"female"},{"fbid":"663321692","name":"Aithne Sheng-Ying Pao","gender":"female"},{"fbid":"664836830","name":"Sophia Li","gender":"female"},{"fbid":"667551917","name":"\u674e\u5764\u73b2","gender":"female"},{"fbid":"669759326","name":"Wan-Ni Tsai Ubertsai","gender":"female"},{"fbid":"671756423","name":"Siyu Tao","gender":"female"},{"fbid":"673656437","name":"Wei-Shien Chang","gender":"female"},{"fbid":"680922284","name":"Jillian Shen","gender":"female"},{"fbid":"681829391","name":"Elizabeth Rowland","gender":"female"},{"fbid":"684753693","name":"Mao Ting","gender":"female"},{"fbid":"686967452","name":"Adaeze Ezeh","gender":"female"},{"fbid":"690380568","name":"Alberta Ngan","gender":"female"},{"fbid":"690754337","name":"Pooja Doshi","gender":"female"},{"fbid":"699926149","name":"Shawn Wen","gender":"female"},{"fbid":"702354889","name":"Xiaomin Wang","gender":"female"},{"fbid":"706053441","name":"Jacqueline Hung","gender":"female"},{"fbid":"709810312","name":"Xenia Antipova","gender":"female"},{"fbid":"714186219","name":"Joyce Chen","gender":"female"},{"fbid":"714651198","name":"Victoria Lu","gender":"female"},{"fbid":"716342616","name":"Linh N V\u01b0\u01a1ng","gender":"female"},{"fbid":"717598474","name":"Zier Liu","gender":"female"},{"fbid":"722873353","name":"Vicky Chen","gender":"female"},{"fbid":"724197798","name":"Rocker May Lin","gender":"female"},{"fbid":"725082602","name":"Hailey Kopp","gender":"female"},{"fbid":"727990709","name":"Ranna Zhou","gender":"female"},{"fbid":"731657269","name":"Eeway Hsu","gender":"female"},{"fbid":"736390343","name":"Junyao Jy Song","gender":"female"},{"fbid":"741690092","name":"Jing Jian","gender":"female"},{"fbid":"749520374","name":"Kristen Wu","gender":"female"},{"fbid":"749555933","name":"Debbie Yu","gender":"female"},{"fbid":"764155283","name":"Shuo Wang","gender":"female"},{"fbid":"778320095","name":"Angela N. Chang","gender":"female"},{"fbid":"787525863","name":"Chen Po-Jung","gender":"female"},{"fbid":"842860286","name":"Abby Huang","gender":"female"},{"fbid":"855200153","name":"Candace Chen","gender":"female"},{"fbid":"869590516","name":"Berta Liao Narbonne","gender":"female"},{"fbid":"888855363","name":"Grace Vicki","gender":"female"},{"fbid":"898585600","name":"Alina Rwei","gender":"female","id":3},{"fbid":"1004364350","name":"Nicole Fong","gender":"female"},{"fbid":"1008804561","name":"Rachel W. Gibson","gender":"female"},{"fbid":"1017640991","name":"Rebecca Wu","gender":"female"},{"fbid":"1025461356","name":"Stephanie N. Chang","gender":"female"},{"fbid":"1029593017","name":"Sherry Hui Xiao Chao","gender":"female"},{"fbid":"1036381049","name":"Stephanie Chen","gender":"female"},{"fbid":"1043396447","name":"Carolyn Coyle","gender":"female"},{"fbid":"1050183464","name":"Chia-i Cheng","gender":"female"},{"fbid":"1055280238","name":"Liz Jensen","gender":"female"},{"fbid":"1065871099","name":"Sabina Sood","gender":"female"},{"fbid":"1081057057","name":"Rae Kuo","gender":"female"},{"fbid":"1087197132","name":"\u90b1\u85b0\u5100","gender":"female"},{"fbid":"1101385939","name":"Yvonne Su","gender":"female","id":1},{"fbid":"1105802000","name":"Amanda David","gender":"female"},{"fbid":"1119533781","name":"Tiffany Huang","gender":"female"},{"fbid":"1123790098","name":"Catherine Kuo","gender":"female"},{"fbid":"1125221881","name":"Tara Soni","gender":"female"},{"fbid":"1135441226","name":"\u66fe\u4f9d\u6674","gender":"female"},{"fbid":"1146150590","name":"Molly McShane","gender":"female"},{"fbid":"1147435671","name":"Jennifer Hsueh","gender":"female"},{"fbid":"1148850279","name":"Sophie Chung","gender":"female"},{"fbid":"1150961675","name":"Sharon Pan","gender":"female"},{"fbid":"1156170243","name":"Liza X","gender":"female"},{"fbid":"1164556481","name":"Laura Deming","gender":"female"},{"fbid":"1196676135","name":"Fan Wei","gender":"female"},{"fbid":"1200870239","name":"Rachel Bowman","gender":"female"},{"fbid":"1212593293","name":"Sonya Juang","gender":"female"},{"fbid":"1215577507","name":"Sandi Howell Hunt","gender":"female"},{"fbid":"1216615221","name":"Yunzhi Gao","gender":"female"},{"fbid":"1225020077","name":"Ana Chen","gender":"female"},{"fbid":"1232400867","name":"Jean Fang","gender":"female"},{"fbid":"1241610316","name":"Aparna Sud","gender":"female"},{"fbid":"1243020382","name":"Sheena Jindal","gender":"female"},{"fbid":"1256868532","name":"Yuwei Zhang","gender":"female"},{"fbid":"1257443982","name":"Fangheng Zhou","gender":"female"},{"fbid":"1259721442","name":"Jane Wang","gender":"female"},{"fbid":"1260220551","name":"Diana Hsieh","gender":"female"},{"fbid":"1261434999","name":"Lily Yingyi Gu","gender":"female"},{"fbid":"1292516408","name":"Vivian Su","gender":"female"},{"fbid":"1332870085","name":"Jenny Xie","gender":"female"},{"fbid":"1341660083","name":"Nahyun Cho","gender":"female"},{"fbid":"1357526377","name":"Iovana Valdez","gender":"female"},{"fbid":"1360725770","name":"Lina Song","gender":"female"},{"fbid":"1374591825","name":"YuJen Lai","gender":"female"},{"fbid":"1391430256","name":"Alyse Cardell","gender":"female"},{"fbid":"1408897851","name":"Wan-Zi Mandy Lu","gender":"female"},{"fbid":"1412794781","name":"Lin WenYing","gender":"female"},{"fbid":"1418175151","name":"Minshu Zhan","gender":"female"},{"fbid":"1450602360","name":"Patricia Adriana","gender":"female"},{"fbid":"1457964350","name":"Anna Falvello Tomas","gender":"female"},{"fbid":"1469657035","name":"Rong-i Shen","gender":"female"},{"fbid":"1479150515","name":"Brinda Vijaykumar","gender":"female"},{"fbid":"1513080852","name":"Jisoo G-Sue Kim","gender":"female"},{"fbid":"1520297617","name":"Tiffany Tang","gender":"female"},{"fbid":"1521540540","name":"Marianna See","gender":"female"},{"fbid":"1535180943","name":"Pei-Wen Hung","gender":"female"},{"fbid":"1536790731","name":"Megan Chang","gender":"female"},{"fbid":"1538520064","name":"Grace Yao","gender":"female"},{"fbid":"1572450408","name":"Sudha Guttikonda","gender":"female"},{"fbid":"1588412659","name":"Dee Hsieh","gender":"female"},{"fbid":"1599690080","name":"Clare Frigo","gender":"female"},{"fbid":"1614063819","name":"Xiao Yun Chang","gender":"female"},{"fbid":"1680750006","name":"Fioni Ch","gender":"female"},{"fbid":"1685836931","name":"Ying-Yu Chen","gender":"female"},{"fbid":"1702843535","name":"Yangzhou Hu","gender":"female"},{"fbid":"1707426000","name":"Clara Shiyang","gender":"female"},{"fbid":"1763756331","name":"Meihuei Hu","gender":"female"},{"fbid":"100000067462407","name":"Cheng Chen","gender":"female"},{"fbid":"100000108438245","name":"Reese Ling","gender":"female"},{"fbid":"100000119263266","name":"Hikaru Miyazaki","gender":"female"},{"fbid":"100000143001130","name":"\u8d99\u82e5\u742a","gender":"female"},{"fbid":"100000145155733","name":"Karine Yuki","gender":"female"},{"fbid":"100000149020493","name":"Joyce Chen","gender":"female"},{"fbid":"100000152317738","name":"Tsai PeiChen","gender":"female"},{"fbid":"100000155832398","name":"Alicia Wang","gender":"female"},{"fbid":"100000159518079","name":"Marie Chang","gender":"female"},{"fbid":"100000164791405","name":"Fang-i Chen","gender":"female"},{"fbid":"100000182651805","name":"Sabrina Yu","gender":"female"},{"fbid":"100000184985113","name":"Hsuan Ju Wang","gender":"female"},{"fbid":"100000200320696","name":"Fang Yi Chu","gender":"female"},{"fbid":"100000206852966","name":"\u6f58\u9999\u6afb","gender":"female"},{"fbid":"100000213971413","name":"\u6c5f\u79c9\u5bb9","gender":"female"},{"fbid":"100000234654840","name":"Carrie Liu","gender":"female"},{"fbid":"100000238557952","name":"Pin Hsuan Sage Chang","gender":"female"},{"fbid":"100000245358644","name":"\u859b\u7136","gender":"female"},{"fbid":"100000259364019","name":"Vivian Mu Yi Lee","gender":"female"},{"fbid":"100000268234986","name":"Wanda Yu","gender":"female"},{"fbid":"100000288159949","name":"Xin-Rei Liao","gender":"female"},{"fbid":"100000294752367","name":"Chiu E Yang","gender":"female"},{"fbid":"100000296254180","name":"Veronica Barrera","gender":"female"},{"fbid":"100000328008922","name":"Yifan Wu","gender":"female"},{"fbid":"100000338489055","name":"Ling-Ya Monica Chao","gender":"female"},{"fbid":"100000356624744","name":"Weiting Chen","gender":"female"},{"fbid":"100000691746375","name":"\u6613\u5b50\u6db5","gender":"female"},{"fbid":"100000703272648","name":"Navi Ivan","gender":"female"},{"fbid":"100000725422325","name":"Season Lin","gender":"female"},{"fbid":"100000726882489","name":"Yanlin Fang","gender":"female"},{"fbid":"100000735258503","name":"Mei Zuo","gender":"female"},{"fbid":"100000735902592","name":"Carolina Lin","gender":"female"},{"fbid":"100000751366029","name":"\u7518\u5b50\u7433","gender":"female"},{"fbid":"100000826640545","name":"\u8cf4\u6021\u5b89","gender":"female"},{"fbid":"100000939937730","name":"\u66fe\u9edb\u541b","gender":"female"},{"fbid":"100000942603132","name":"\u5433\u5b87","gender":"female"},{"fbid":"100001224990036","name":"\u90ed\u76c8\u59a4","gender":"female"},{"fbid":"100001327240739","name":"Xiao Guo","gender":"female"},{"fbid":"100001445028860","name":"\u9ec3\u4ee5\u7444","gender":"female"},{"fbid":"100001450296441","name":"Sophie Bai","gender":"female"},{"fbid":"100001470873900","name":"Joy Aragon","gender":"female"},{"fbid":"100001925363580","name":"Yuan Pang","gender":"female"},{"fbid":"100002153485676","name":"Saki Fujita","gender":"female"},{"fbid":"100002413062541","name":"Katrina Chen","gender":"female"},{"fbid":"100005894163651","name":"Alpaca Jackson","gender":"female"}]', "updated_at" = '2013-10-02 19:13:46.105215' WHERE "users"."id" = 1[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 200 OK in 692ms (Views: 52.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-10-02 15:13:46 -0400
+Served asset /jquery-ui/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-10-02 15:13:46 -0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-02 21:05:38 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (1.5ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (2.8ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb__1011165232653354987_70276228915820 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (2.5ms)
+  Rendered users/show.html.erb within layouts/application (53.9ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+Completed 200 OK in 439ms (Views: 422.0ms | ActiveRecord: 2.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-04 14:40:27 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1599.3ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 1620ms (Views: 1619.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-11-04 14:40:29 -0500
+Served asset /application.css - 200 OK (128ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-11-04 14:40:29 -0500
+Compiled i18n/translations.js  (1018ms)  (pid 10100)
+Compiled application.js  (21ms)  (pid 10100)
+Served asset /application.js - 200 OK (1294ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2013-11-04 14:40:33 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/auth/facebook
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-11-04 14:40:33 -0500
+
+
+Started GET "/auth/facebook/callback?code=AQAZf0oz9MUmzWlk3V5Ulxsb3cau11AdqB1gtzJdBzj7H-XEVxMZt8xW0HS-ko0NzwMJQNaoVMfQPc0RcY45jQPJdTVxAyVooajN7UUyKkjJWZCyfZ4aCsisfqNUwR9WfzkHQLC2pndyt3HHaba_-rhtr81QxJRX3l0JrQcu-WVFtzuLyj22YdNbQ3yRxlkG3EUGM7qdubBgfjhiyJ1OT37_Y0aDn3TETJSSBFCK_8w4RcMAw9ckKflV1oUbwuBDQnnP8mGy6MYPdHFgNT9skEy-279kgBALZQxKZzj5uDEEioub-N-_b0Sf6ri7n_Radl0" for 127.0.0.1 at 2013-11-04 14:40:33 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAZf0oz9MUmzWlk3V5Ulxsb3cau11AdqB1gtzJdBzj7H-XEVxMZt8xW0HS-ko0NzwMJQNaoVMfQPc0RcY45jQPJdTVxAyVooajN7UUyKkjJWZCyfZ4aCsisfqNUwR9WfzkHQLC2pndyt3HHaba_-rhtr81QxJRX3l0JrQcu-WVFtzuLyj22YdNbQ3yRxlkG3EUGM7qdubBgfjhiyJ1OT37_Y0aDn3TETJSSBFCK_8w4RcMAw9ckKflV1oUbwuBDQnnP8mGy6MYPdHFgNT9skEy-279kgBALZQxKZzj5uDEEioub-N-_b0Sf6ri7n_Radl0", "provider"=>"facebook"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."fbid" = '1605016083' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."fbid" = '1605016083' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "friend_list" = NULL, "updated_at" = '2013-11-04 19:40:34.321663' WHERE "users"."id" = 1
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 256ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-11-04 14:40:34 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___234283982699712776_70329708018540 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:50)
+  Rendered users/_users.js (0.5ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___234283982699712776_70329708018540 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:51)
+  Rendered users/_sort.js (0.5ms)
+DEPRECATION WARNING: Passing the format in the template name is deprecated. Please pass render with :formats => [:js] instead. (called from _app_views_users_show_html_erb___234283982699712776_70329708018540 at /Users/changey/Dropbox/Spring 2013/6.170/alpaca copy/app/views/users/show.html.erb:52)
+  Rendered users/_filter.js (0.6ms)
+  Rendered users/show.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2013-11-04 14:40:34 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/users/1/showfriendslist" for 127.0.0.1 at 2013-11-04 14:40:34 -0500
+Processing by UsersController#showFriendsList as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.9ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."fbid" IN ('224413', '709469', '1210034', '7902421', '14900737', '83503296', '201302134', '500173717', '500820656', '501300663', '501504926', '501684315', '504198043', '504215712', '507725729', '509847928', '512701549', '515925366', '516144912', '518005598', '525206998', '529895547', '536932938', '539975937', '540449278', '540877253', '555110645', '564928796', '572527567', '578645814', '580309807', '585502264', '588389045', '590459493', '591065064', '593207730', '597298697', '598205003', '601980661', '605957237', '617946404', '620930283', '624083080', '625730264', '626307687', '646586789', '648183725', '650511069', '663321692', '664836830', '667551917', '669759326', '670155769', '673656437', '680922284', '681829391', '684753693', '686967452', '690380568', '690754337', '699926149', '702354889', '706053441', '709810312', '714186219', '714651198', '716342616', '717598474', '722873353', '724197798', '725082602', '727990709', '731657269', '736390343', '741690092', '749520374', '749555933', '764155283', '778320095', '787525863', '842860286', '855200153', '869590516', '888855363', '898585600', '1004364350', '1008804561', '1017640991', '1025461356', '1029593017', '1036381049', '1043396447', '1050183464', '1055280238', '1065871099', '1081057057', '1087197132', '1101385939', '1105802000', '1119533781', '1123790098', '1125221881', '1146150590', '1147435671', '1148850279', '1150961675', '1156170243', '1164556481', '1196676135', '1200870239', '1212593293', '1215577507', '1216615221', '1225020077', '1232400867', '1241610316', '1243020382', '1256868532', '1257443982', '1259721442', '1260220551', '1261434999', '1292516408', '1332870085', '1341660083', '1357526377', '1360725770', '1374591825', '1391430256', '1408897851', '1412794781', '1418175151', '1450602360', '1457964350', '1469657035', '1479150515', '1513080852', '1520297617', '1521540540', '1535180943', '1536790731', '1538520064', '1572450408', '1588412659', '1599690080', '1680750006', '1685836931', '1702843535', '1707426000', '1763756331', '100000067462407', '100000108438245', '100000119263266', '100000143001130', '100000145155733', '100000149020493', '100000152317738', '100000155832398', '100000159518079', '100000164791405', '100000182651805', '100000184985113', '100000200320696', '100000206852966', '100000213971413', '100000234654840', '100000238557952', '100000245358644', '100000259364019', '100000268234986', '100000288159949', '100000294752367', '100000296254180', '100000328008922', '100000338489055', '100000356624744', '100000691746375', '100000703272648', '100000725422325', '100000726882489', '100000735258503', '100000735902592', '100000751366029', '100000826640545', '100000939937730', '100000942603132', '100001224990036', '100001327240739', '100001445028860', '100001450296441', '100001470873900', '100001925363580', '100002153485676', '100002413062541', '100005894163651', '100006542384300')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."fbid" = '1605016083' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  UPDATE "users" SET "friend_list" = '[{"fbid":"224413","name":"Anting Liu","gender":"female"},{"fbid":"709469","name":"Sidney Tsai","gender":"female"},{"fbid":"1210034","name":"Joyce Yang","gender":"female"},{"fbid":"7902421","name":"Ellen Kuo","gender":"female"},{"fbid":"14900737","name":"Jalila Bouchareb","gender":"female"},{"fbid":"83503296","name":"Heather Wilk","gender":"female"},{"fbid":"201302134","name":"Airica Prange","gender":"female"},{"fbid":"500173717","name":"Kelly Yu-Ju Chiu","gender":"female"},{"fbid":"500820656","name":"Tiantian Zhou","gender":"female"},{"fbid":"501300663","name":"Bettina Cheung","gender":"female"},{"fbid":"501504926","name":"Tendelle Sheu","gender":"female"},{"fbid":"501684315","name":"Victoria Sun","gender":"female"},{"fbid":"504198043","name":"Theresa Yeh","gender":"female"},{"fbid":"504215712","name":"Danielle Class","gender":"female"},{"fbid":"507725729","name":"Emma Chung","gender":"female"},{"fbid":"509847928","name":"Angela Park","gender":"female"},{"fbid":"512701549","name":"Anita Wang","gender":"female","id":2},{"fbid":"515925366","name":"Mengjie Ding","gender":"female"},{"fbid":"516144912","name":"Amber Lin","gender":"female"},{"fbid":"518005598","name":"Niveditha Vathsangam","gender":"female"},{"fbid":"525206998","name":"Chia-Ling Pai","gender":"female"},{"fbid":"529895547","name":"Victoria Li","gender":"female"},{"fbid":"536932938","name":"Jennifer Tang","gender":"female"},{"fbid":"539975937","name":"Isabella Wei","gender":"female"},{"fbid":"540449278","name":"Angela Yin-Jen Wang","gender":"female"},{"fbid":"540877253","name":"Elaine Han","gender":"female"},{"fbid":"555110645","name":"Jasmine Huynh","gender":"female"},{"fbid":"564928796","name":"Sheila Xu","gender":"female"},{"fbid":"572527567","name":"Yun-Hsin Huang","gender":"female"},{"fbid":"578645814","name":"Michelle Wang","gender":"female"},{"fbid":"580309807","name":"Di Jin","gender":"female"},{"fbid":"585502264","name":"Shuhan W. May","gender":"female"},{"fbid":"588389045","name":"Jessica Li","gender":"female"},{"fbid":"590459493","name":"Lori Monteleone","gender":"female"},{"fbid":"591065064","name":"Joyce Chen","gender":"female"},{"fbid":"593207730","name":"Ayten K\u00fcbra T\u00fcrkmen","gender":"female"},{"fbid":"597298697","name":"Joy Sim","gender":"female"},{"fbid":"598205003","name":"Danielle Lynne Strachman","gender":"female"},{"fbid":"601980661","name":"Morgan Lai","gender":"female"},{"fbid":"605957237","name":"Yiling Chen","gender":"female"},{"fbid":"617946404","name":"Eunice Lin","gender":"female"},{"fbid":"620930283","name":"Jill Catherine Rosok","gender":"female"},{"fbid":"624083080","name":"Mrudula Somu","gender":"female"},{"fbid":"625730264","name":"Juliann Shih","gender":"female"},{"fbid":"626307687","name":"Yinghui Wang","gender":"female"},{"fbid":"646586789","name":"Judy Chang","gender":"female"},{"fbid":"648183725","name":"Michelle Tsai","gender":"female"},{"fbid":"650511069","name":"Michelle Holtzhausen","gender":"female"},{"fbid":"663321692","name":"Aithne Sheng-Ying Pao","gender":"female"},{"fbid":"664836830","name":"Sophia Li","gender":"female"},{"fbid":"667551917","name":"\u674e\u5764\u73b2","gender":"female"},{"fbid":"669759326","name":"Wan-Ni Tsai Ubertsai","gender":"female"},{"fbid":"670155769","name":"Shih-Yi Tseng","gender":"female"},{"fbid":"673656437","name":"Wei-Shien Chang","gender":"female"},{"fbid":"680922284","name":"Jillian Shen","gender":"female"},{"fbid":"681829391","name":"Elizabeth Rowland","gender":"female"},{"fbid":"684753693","name":"Mao Ting","gender":"female"},{"fbid":"686967452","name":"Adaeze Ezeh","gender":"female"},{"fbid":"690380568","name":"Alberta Ngan","gender":"female"},{"fbid":"690754337","name":"Pooja Doshi","gender":"female"},{"fbid":"699926149","name":"Shawn Wen","gender":"female"},{"fbid":"702354889","name":"Xiaomin Wang","gender":"female"},{"fbid":"706053441","name":"Jacqueline Hung","gender":"female"},{"fbid":"709810312","name":"Xenia Antipova","gender":"female"},{"fbid":"714186219","name":"Joyce Chen","gender":"female"},{"fbid":"714651198","name":"Victoria Lu","gender":"female"},{"fbid":"716342616","name":"Linh N V\u01b0\u01a1ng","gender":"female"},{"fbid":"717598474","name":"Zier Liu","gender":"female"},{"fbid":"722873353","name":"Vicky Chen","gender":"female"},{"fbid":"724197798","name":"Rocker May Lin","gender":"female"},{"fbid":"725082602","name":"Hailey Kopp","gender":"female"},{"fbid":"727990709","name":"Ranna Zhou","gender":"female"},{"fbid":"731657269","name":"Eeway Hsu","gender":"female"},{"fbid":"736390343","name":"Junyao Jy Song","gender":"female"},{"fbid":"741690092","name":"Jing Jian","gender":"female"},{"fbid":"749520374","name":"Kristen Wu","gender":"female"},{"fbid":"749555933","name":"Debbie Yu","gender":"female"},{"fbid":"764155283","name":"Shuo Wang","gender":"female"},{"fbid":"778320095","name":"Angela N. Chang","gender":"female"},{"fbid":"787525863","name":"Chen Po-Jung","gender":"female"},{"fbid":"842860286","name":"Abby Huang","gender":"female"},{"fbid":"855200153","name":"Candace Chen","gender":"female"},{"fbid":"869590516","name":"Berta Liao Narbonne","gender":"female"},{"fbid":"888855363","name":"Grace Vicki","gender":"female"},{"fbid":"898585600","name":"Alina Rwei","gender":"female","id":3},{"fbid":"1004364350","name":"Nicole Fong","gender":"female"},{"fbid":"1008804561","name":"Rachel W. Gibson","gender":"female"},{"fbid":"1017640991","name":"Rebecca Wu","gender":"female"},{"fbid":"1025461356","name":"Stephanie N. Chang","gender":"female"},{"fbid":"1029593017","name":"Sherry Hui Xiao Chao","gender":"female"},{"fbid":"1036381049","name":"Stephanie Chen","gender":"female"},{"fbid":"1043396447","name":"Carolyn Coyle","gender":"female"},{"fbid":"1050183464","name":"Chia-i Cheng","gender":"female"},{"fbid":"1055280238","name":"Liz Jensen","gender":"female"},{"fbid":"1065871099","name":"Sabina Sood","gender":"female"},{"fbid":"1081057057","name":"Rae Kuo","gender":"female"},{"fbid":"1087197132","name":"\u90b1\u85b0\u5100","gender":"female"},{"fbid":"1101385939","name":"Yvonne Su","gender":"female","id":1},{"fbid":"1105802000","name":"Amanda David","gender":"female"},{"fbid":"1119533781","name":"Tiffany Huang","gender":"female"},{"fbid":"1123790098","name":"Catherine Kuo","gender":"female"},{"fbid":"1125221881","name":"Tara Soni","gender":"female"},{"fbid":"1146150590","name":"Molly McShane","gender":"female"},{"fbid":"1147435671","name":"Jennifer Hsueh","gender":"female"},{"fbid":"1148850279","name":"Sophie Chung","gender":"female"},{"fbid":"1150961675","name":"Sharon Pan","gender":"female"},{"fbid":"1156170243","name":"Liza X","gender":"female"},{"fbid":"1164556481","name":"Laura Deming","gender":"female"},{"fbid":"1196676135","name":"Fan Wei","gender":"female"},{"fbid":"1200870239","name":"Rachel Bowman","gender":"female"},{"fbid":"1212593293","name":"Sonya Juang","gender":"female"},{"fbid":"1215577507","name":"Sandi Howell Hunt","gender":"female"},{"fbid":"1216615221","name":"Yunzhi Gao","gender":"female"},{"fbid":"1225020077","name":"Ana Chen","gender":"female"},{"fbid":"1232400867","name":"Jean Fang","gender":"female"},{"fbid":"1241610316","name":"Aparna Sud","gender":"female"},{"fbid":"1243020382","name":"Sheena Jindal","gender":"female"},{"fbid":"1256868532","name":"Yuwei Zhang","gender":"female"},{"fbid":"1257443982","name":"Fangheng Zhou","gender":"female"},{"fbid":"1259721442","name":"Jane Wang","gender":"female"},{"fbid":"1260220551","name":"Diana Hsieh","gender":"female"},{"fbid":"1261434999","name":"Lily Yingyi Gu","gender":"female"},{"fbid":"1292516408","name":"Vivian Su","gender":"female"},{"fbid":"1332870085","name":"Jenny Xie","gender":"female"},{"fbid":"1341660083","name":"Nahyun Cho","gender":"female"},{"fbid":"1357526377","name":"Iovana Valdez","gender":"female"},{"fbid":"1360725770","name":"Lina Song","gender":"female"},{"fbid":"1374591825","name":"YuJen Lai","gender":"female"},{"fbid":"1391430256","name":"Alyse Cardell","gender":"female"},{"fbid":"1408897851","name":"Wan-Zi Mandy Lu","gender":"female"},{"fbid":"1412794781","name":"Lin WenYing","gender":"female"},{"fbid":"1418175151","name":"Minshu Zhan","gender":"female"},{"fbid":"1450602360","name":"Patricia Adriana","gender":"female"},{"fbid":"1457964350","name":"Anna Falvello Tomas","gender":"female"},{"fbid":"1469657035","name":"Rong-i Shen","gender":"female"},{"fbid":"1479150515","name":"Brinda Vijaykumar","gender":"female"},{"fbid":"1513080852","name":"Jisoo G-Sue Kim","gender":"female"},{"fbid":"1520297617","name":"Tiffany Tang","gender":"female"},{"fbid":"1521540540","name":"Marianna See","gender":"female"},{"fbid":"1535180943","name":"Pei-Wen Hung","gender":"female"},{"fbid":"1536790731","name":"Megan Chang","gender":"female"},{"fbid":"1538520064","name":"Grace Yao","gender":"female"},{"fbid":"1572450408","name":"Sudha Guttikonda","gender":"female"},{"fbid":"1588412659","name":"Dee Hsieh","gender":"female"},{"fbid":"1599690080","name":"Clare Frigo","gender":"female"},{"fbid":"1680750006","name":"Fioni Ch","gender":"female"},{"fbid":"1685836931","name":"Ying-Yu Chen","gender":"female"},{"fbid":"1702843535","name":"Yangzhou Hu","gender":"female"},{"fbid":"1707426000","name":"Clara Shiyang","gender":"female"},{"fbid":"1763756331","name":"Meihuei Hu","gender":"female"},{"fbid":"100000067462407","name":"Cheng Chen","gender":"female"},{"fbid":"100000108438245","name":"Reese Ling","gender":"female"},{"fbid":"100000119263266","name":"Hikaru Miyazaki","gender":"female"},{"fbid":"100000143001130","name":"\u8d99\u82e5\u742a","gender":"female"},{"fbid":"100000145155733","name":"Karine Yuki","gender":"female"},{"fbid":"100000149020493","name":"Joyce Chen","gender":"female"},{"fbid":"100000152317738","name":"Tsai PeiChen","gender":"female"},{"fbid":"100000155832398","name":"Alicia Wang","gender":"female"},{"fbid":"100000159518079","name":"Marie Chang","gender":"female"},{"fbid":"100000164791405","name":"Fang-i Chen","gender":"female"},{"fbid":"100000182651805","name":"Sabrina Yu","gender":"female"},{"fbid":"100000184985113","name":"Hsuan Ju Wang","gender":"female"},{"fbid":"100000200320696","name":"Fang Yi Chu","gender":"female"},{"fbid":"100000206852966","name":"\u6f58\u9999\u6afb","gender":"female"},{"fbid":"100000213971413","name":"\u6c5f\u79c9\u5bb9","gender":"female"},{"fbid":"100000234654840","name":"Carrie Liu","gender":"female"},{"fbid":"100000238557952","name":"Pin Hsuan Sage Chang","gender":"female"},{"fbid":"100000245358644","name":"\u859b\u7136","gender":"female"},{"fbid":"100000259364019","name":"Vivian Mu Yi Lee","gender":"female"},{"fbid":"100000268234986","name":"Wanda Yu","gender":"female"},{"fbid":"100000288159949","name":"Xin-Rei Liao","gender":"female"},{"fbid":"100000294752367","name":"Chiu E Yang","gender":"female"},{"fbid":"100000296254180","name":"Veronica Barrera","gender":"female"},{"fbid":"100000328008922","name":"Yifan Wu","gender":"female"},{"fbid":"100000338489055","name":"Ling-Ya Monica Chao","gender":"female"},{"fbid":"100000356624744","name":"Weiting Chen","gender":"female"},{"fbid":"100000691746375","name":"\u6613\u5b50\u6db5","gender":"female"},{"fbid":"100000703272648","name":"Navi Ivan","gender":"female"},{"fbid":"100000725422325","name":"Season Lin","gender":"female"},{"fbid":"100000726882489","name":"Yanlin Fang","gender":"female"},{"fbid":"100000735258503","name":"Mei Zuo","gender":"female"},{"fbid":"100000735902592","name":"Carolina Lin","gender":"female"},{"fbid":"100000751366029","name":"\u7518\u5b50\u7433","gender":"female"},{"fbid":"100000826640545","name":"\u8cf4\u6021\u5b89","gender":"female"},{"fbid":"100000939937730","name":"\u66fe\u9edb\u541b","gender":"female"},{"fbid":"100000942603132","name":"\u5433\u5b87","gender":"female"},{"fbid":"100001224990036","name":"\u90ed\u76c8\u59a4","gender":"female"},{"fbid":"100001327240739","name":"Xiao Guo","gender":"female"},{"fbid":"100001445028860","name":"\u9ec3\u4ee5\u7444","gender":"female"},{"fbid":"100001450296441","name":"Sophie Bai","gender":"female"},{"fbid":"100001470873900","name":"Joy Aragon","gender":"female"},{"fbid":"100001925363580","name":"Yuan Pang","gender":"female"},{"fbid":"100002153485676","name":"Saki Fujita","gender":"female"},{"fbid":"100002413062541","name":"Katrina Chen","gender":"female"},{"fbid":"100005894163651","name":"Alpaca Jackson","gender":"female"},{"fbid":"100006542384300","name":"Tsai Katie","gender":"female"}]', "updated_at" = '2013-11-04 19:40:35.294998' WHERE "users"."id" = 1
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 606ms (Views: 13.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-11-04 14:40:35 -0500
+Served asset /jquery-ui/ui-bg_flat_75_ffffff_40x100.png - 304 Not Modified (49ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-11-04 14:40:35 -0500
+Served asset /glyphicons-halflings.png - 200 OK (5ms)

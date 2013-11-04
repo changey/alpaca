@@ -38,7 +38,7 @@ $(function () {
 		var categorySelectElement = document.createElement('select');
 		categorySelectElement.id = 'categorySelect' + current_id;
 		categorySelectElement.setAttribute('style', 'width:150px');
-		$.each(['Appearances', 'IQ', 'EQ', 'Bangability'], function(index, option) {
+		$.each(['EQ'], function(index, option) {
 			var optionElement = document.createElement('option');
 			optionElement.setAttribute('value', option);
 			optionElement.appendChild(document.createTextNode(I18n.t(option)));

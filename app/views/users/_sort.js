@@ -3,7 +3,7 @@ type = "text/javascript" > $(function() {
 	
 	I18n.locale = "<%= I18n.locale %>";
 
-	var categories = ['Appearances', 'IQ', 'EQ', 'Bangability'];
+	var categories = ['EQ'];
 
 	$.each(categories, function(index, category) {
 		// Add in dropdown menu

@@ -5,7 +5,7 @@ I18n.locale = "<%= I18n.locale %>";
 
 var profile_id = "<%= @profile.id %>";
 var id = "<%= session[:user_id] %>";
-var categories = ['Appearances', 'IQ', 'EQ', 'Bangability'];
+var categories = ['EQ'];
 var ratingsTable = document.getElementById('ratings');
 
 $.each(categories, function(index, category) {
